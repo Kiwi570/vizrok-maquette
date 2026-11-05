@@ -25,7 +25,7 @@ export default (c) => {
   </div>
 </section>
 
-<section class="b-catalogue conteneur" id="catalogue">
+<section class="clair b-catalogue conteneur" id="catalogue">
   <div class="b-outils">
     <div class="champ b-recherche">
       <label for="b-q">${c.t('boutique.recherche')}</label>

@@ -70,7 +70,7 @@ export default (c) => {
   </div>
 </section>
 
-<section class="saveurs" id="saveurs">
+<section class="clair saveurs" id="saveurs">
   <div class="conteneur">
     <p class="surtitre">${c.t('nutrition.saveurs.surtitre')}</p>
     <h2 data-anime="lignes">${c.t('nutrition.saveurs.titre')}</h2>

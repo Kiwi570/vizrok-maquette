@@ -40,35 +40,29 @@ export default (c) => {
   <button type="button" class="ruban-pause" data-pause-pour="ruban" data-libelle-pause="${c.s('commun.pause')}" data-libelle-lecture="${c.s('commun.lecture')}"><span data-libelle-bouton>${c.t('commun.pause')}</span></button>
 </div>
 
-<section class="manifeste" id="manifeste">
-  <div class="manifeste-fond" aria-hidden="true">${c.media({ nom: 'grok/accueil-manifeste', alt: '', cadrage: '50% 60%', sizes: '100vw', attrs: 'data-fx="parallaxe" data-fx-force="12"' })}</div>
-  <div class="conteneur manifeste-cadre">
-    <p class="surtitre">${c.t('accueil.manifeste.surtitre')}</p>
-    <h2 class="manifeste-texte" data-effet="manifeste" data-mot-a-mot>${c.t('accueil.manifeste.texte')}</h2>
-    <p class="manifeste-suite" data-anime="mots">${c.t('accueil.manifeste.suite')}</p>
-    <p class="manifeste-signature">${c.t('accueil.manifeste.signature')}</p>
+<section class="clair collection-intro" id="collection" data-effet="collection-blanche">
+  <div class="ci-fond-texte" aria-hidden="true" data-audit-ignorer><span>${c.t('accueil.collection.fond')}</span></div>
+  <div class="conteneur ci-cadre">
+    <div class="ci-visuels">
+      ${c.media({ nom: 'produits/hoodie-cotton-heritage-3', alt: c.s('accueil.collection.alt1'), cadrage: '50% 22%', classe: 'ci-grande', sizes: '(max-width: 760px) 86vw, 40vw', attrs: 'data-anime="rideau"' })}
+      ${c.media({ nom: 'produits/pull-cotton-heritage-3', alt: c.s('accueil.collection.alt2'), cadrage: '50% 20%', classe: 'ci-petite', sizes: '(max-width: 760px) 40vw, 18vw' })}
+      <svg class="ci-badge" viewBox="0 0 120 120" aria-hidden="true" data-audit-ignorer><defs><path id="ci-cercle" d="M60,60m-44,0a44,44,0,1,1,88,0a44,44,0,1,1,-88,0"/></defs><circle cx="60" cy="60" r="58"/><text><textPath href="#ci-cercle" textLength="272" lengthAdjust="spacing">${c.s('accueil.collection.badge')}</textPath></text><path class="ci-eclair" d="M64 36 50 62h9l-4 22 15-28h-9z"/></svg>
+    </div>
+    <div class="ci-texte">
+      <p class="surtitre">${c.t('accueil.collection.surtitre')}</p>
+      <h2 data-anime="lignes">${c.t('accueil.collection.titre')}</h2>
+      <p data-anime>${c.t('accueil.collection.texte')}</p>
+      <ul class="ci-chiffres" data-anime="cascade">
+        <li><strong><span data-compteur="18">18</span></strong><span>${c.t('accueil.collection.c1')}</span></li>
+        <li><strong>${c.t('accueil.collection.c2t')}</strong><span>${c.t('accueil.collection.c2')}</span></li>
+        <li><strong>${c.t('accueil.collection.c3t')}</strong><span>${c.t('accueil.collection.c3')}</span></li>
+      </ul>
+      <p class="ci-actions" data-anime>
+        ${c.lien('boutique', { params: 'collection=vetements', classe: 'bouton', texte: c.t('accueil.collection.action'), attrs: 'data-survol="magnetique"' })}
+        ${c.lien('seance', { ancre: 'kit', classe: 'lien-fleche', texte: c.t('accueil.collection.seance') })}
+      </p>
+    </div>
   </div>
-</section>
-
-<section class="porte" id="porte" data-effet="porte-volets">
-  <div class="conteneur porte-tete">
-    <p class="surtitre">${c.t('accueil.porte.surtitre')}</p>
-    <h2 data-anime="lignes">${c.t('accueil.porte.titre')}</h2>
-    <p>${c.t('accueil.porte.texte')}</p>
-  </div>
-  <ul class="porte-grille" role="list" aria-label="${c.s('accueil.porte.region')}">
-    ${PORTE.map(([id, vue, cadrage], i) => { const p = P.find((x) => x.id === id); return html`<li class="porte-item porte-item--${i + 1}" data-porte-vitesse="${[-6, 8, -12, 5][i]}">
-      <figure class="porte-cadre">
-        ${c.media({ nom: `produits/${id}-${vue}`, alt: c.s('accueil.porte.alt', { piece: p.court }), cadrage, classe: 'porte-media', sizes: '(max-width: 760px) 80vw, 26vw' })}
-        <span class="porte-volets" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
-      </figure>
-      <div class="porte-etiquette">
-        <p class="porte-nom">${p.court}</p>
-        <p class="porte-prix" data-prix>${prix(p.prix)} <small>${c.t('commun.ht')}</small></p>
-        <button type="button" class="bouton bouton--petit" data-ajouter="${p.id}" aria-label="${c.s('commun.choisir') + ' : ' + p.court}">${c.t('commun.choisir')}</button>
-      </div>
-    </li>`; })}
-  </ul>
 </section>
 
 <section class="collections" id="collections">
@@ -102,6 +96,27 @@ export default (c) => {
   </div>
 </section>
 
+<section class="clair porte" id="porte" data-effet="porte-volets">
+  <div class="conteneur porte-tete">
+    <p class="surtitre">${c.t('accueil.porte.surtitre')}</p>
+    <h2 data-anime="lignes">${c.t('accueil.porte.titre')}</h2>
+    <p>${c.t('accueil.porte.texte')}</p>
+  </div>
+  <ul class="porte-grille" role="list" aria-label="${c.s('accueil.porte.region')}">
+    ${PORTE.map(([id, vue, cadrage], i) => { const p = P.find((x) => x.id === id); return html`<li class="porte-item porte-item--${i + 1}" data-porte-vitesse="${[-6, 8, -12, 5][i]}">
+      <figure class="porte-cadre">
+        ${c.media({ nom: `produits/${id}-${vue}`, alt: c.s('accueil.porte.alt', { piece: p.court }), cadrage, classe: 'porte-media', sizes: '(max-width: 760px) 80vw, 26vw' })}
+        <span class="porte-volets" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      </figure>
+      <div class="porte-etiquette">
+        <p class="porte-nom">${p.court}</p>
+        <p class="porte-prix" data-prix>${prix(p.prix)} <small>${c.t('commun.ht')}</small></p>
+        <button type="button" class="bouton bouton--petit" data-ajouter="${p.id}" aria-label="${c.s('commun.choisir') + ' : ' + p.court}">${c.t('commun.choisir')}</button>
+      </div>
+    </li>`; })}
+  </ul>
+</section>
+
 <section class="maillot" id="maillot" data-effet="maillot-mesh">
   <div class="maillot-scene">
     <div class="maillot-lueur" aria-hidden="true"></div>
@@ -127,7 +142,7 @@ export default (c) => {
   </div>
 </section>
 
-<section class="galerie ecran epingle nouveautes" id="nouveautes" data-fx="galerie">
+<section class="clair galerie ecran epingle nouveautes" id="nouveautes" data-fx="galerie">
   <div class="conteneur galerie-tete">
     <p class="surtitre">${c.t('accueil.nouveautes.surtitre')}</p>
     <h2 data-anime="lignes">${c.t('accueil.nouveautes.titre')}</h2>
@@ -137,6 +152,16 @@ export default (c) => {
     ${nouveautes.map((p) => carteProduit(c, p, { classe: 'carte', sizes: '(max-width: 760px) 78vw, 30vw' }))}
   </div>
   <div class="galerie-progres" aria-hidden="true"><span></span></div>
+</section>
+
+<section class="manifeste" id="manifeste">
+  <div class="manifeste-fond" aria-hidden="true">${c.media({ nom: 'grok/accueil-manifeste', alt: '', cadrage: '50% 60%', sizes: '100vw', attrs: 'data-fx="parallaxe" data-fx-force="12"' })}</div>
+  <div class="conteneur manifeste-cadre">
+    <p class="surtitre">${c.t('accueil.manifeste.surtitre')}</p>
+    <h2 class="manifeste-texte" data-effet="manifeste" data-mot-a-mot>${c.t('accueil.manifeste.texte')}</h2>
+    <p class="manifeste-suite" data-anime="mots">${c.t('accueil.manifeste.suite')}</p>
+    <p class="manifeste-signature">${c.t('accueil.manifeste.signature')}</p>
+  </div>
 </section>
 
 <section class="nutri" id="nutrition">
@@ -154,7 +179,7 @@ export default (c) => {
   </div>
 </section>
 
-<section class="garanties conteneur" id="garanties">
+<section class="clair garanties conteneur" id="garanties">
   ${c.media({ nom: 'grok/accueil-garanties', alt: c.s('accueil.garanties.alt'), cadrage: '50% 55%', classe: 'garanties-media', sizes: '(max-width: 760px) 100vw, 36vw', attrs: 'data-anime="rideau"' })}
   <div class="garanties-texte">
     <p class="surtitre">${c.t('accueil.garanties.surtitre')}</p>

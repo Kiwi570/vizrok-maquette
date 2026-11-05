@@ -58,7 +58,7 @@ export default (c) => html`
   </div>
 </section>
 
-<section class="rembours conteneur" id="remboursements">
+<section class="clair rembours conteneur" id="remboursements">
   <p class="surtitre">${c.t('livraison.remboursements.surtitre')}</p>
   <h2 data-anime="lignes">${c.t('livraison.remboursements.titre')}</h2>
   <ul class="rembours-grille" data-anime="cascade" data-visuel>

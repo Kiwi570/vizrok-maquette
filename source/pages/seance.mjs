@@ -61,7 +61,7 @@ export default (c) => {
   </div>
 </section>
 
-<section class="guide-tailles conteneur" id="tailles">
+<section class="clair guide-tailles conteneur" id="tailles">
   <div class="tailles-texte">
     <p class="surtitre">${c.t('seance.tailles.surtitre')}</p>
     <h2 data-anime="lignes">${c.t('seance.tailles.titre')}</h2>
@@ -124,7 +124,7 @@ export default (c) => {
   </div>
 </section>
 
-<section class="fin conteneur" id="fin">
+<section class="clair fin conteneur" id="fin">
   <div class="fin-disques" aria-hidden="true" data-visuel data-fx="trace"><svg viewBox="0 0 400 120"><path d="M10 60 H 390" stroke="currentColor" stroke-width="6" stroke-linecap="round" fill="none"/></svg></div>
   <h2 data-anime="lignes">${c.t('seance.fin.titre')}</h2>
   <p class="fin-actions" data-anime>${c.lien('boutique', { classe: 'bouton', texte: c.t('seance.fin.action'), attrs: 'data-survol="magnetique"' })}</p>

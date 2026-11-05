@@ -1,7 +1,7 @@
 /* Panier simulé : une seule source (localStorage « vizrok:panier »), identique dans tous les onglets (événement storage),
    donnée abîmée nettoyée sans bloquer le site, tiroir avec focus gardé, Échap et retour du focus,
    produit qui s'envole vers le panier, total et ajouts annoncés aux lecteurs d'écran. Rien n'est payé. */
-import { etat, suivre, lacher, partir } from './socle/index.js?v=3';
+import { etat, suivre, lacher, partir } from './socle/index.js?v=4';
 
 const CLE = 'vizrok:panier';
 const $ = (s, r = document) => r.querySelector(s);

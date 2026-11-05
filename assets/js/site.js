@@ -1,10 +1,10 @@
 /* Effets propres à Vizrok.store. Le socle gère l'ouverture, le voile, l'en-tête, le menu, le mode calme, les boucles,
    les mesures et la bibliothèque d'effets (posée par attributs dans les pages). Ici : l'intro « la barre se charge »,
    le mouvement d'ouverture de chaque page, les effets de défilement propres au client (chacun marqué data-effet). */
-import { demarrer, boucle, etat, rafraichir, quand } from './socle/index.js?v=3';
-import { initPanier, ajouter, catalogue } from './panier.js?v=3';
-import { initBoutique } from './boutique.js?v=3';
-import { initKit, initEtapes } from './formulaires-vizrok.js?v=3';
+import { demarrer, boucle, etat, rafraichir, quand } from './socle/index.js?v=4';
+import { initPanier, ajouter, catalogue } from './panier.js?v=4';
+import { initBoutique } from './boutique.js?v=4';
+import { initKit, initEtapes } from './formulaires-vizrok.js?v=4';
 
 const gsap = window.gsap;
 const ST = window.ScrollTrigger;
@@ -147,6 +147,18 @@ function fichesVivantes() {
     if (longue) { e.preventDefault(); e.stopImmediatePropagation(); longue = false; return; }
     if (!(e.target.closest && e.target.closest('.fiche-rapide'))) $$('.fiche.est-rapide').forEach((f) => f.classList.remove('est-rapide'));
   }, true);
+}
+
+/* Accueil, la collection : la seconde photo glisse plus vite que la grande, le badge tourne, le texte géant défile en fond. */
+function collectionBlanche() {
+  const sec = $('.collection-intro');
+  if (!sec || etat.calme) return;
+  const st = { trigger: sec, start: 'top bottom', end: 'bottom top', scrub: 0.6 };
+  gsap.fromTo($('.ci-fond-texte span', sec), { xPercent: 4 }, { xPercent: -28, ease: 'none', scrollTrigger: st });
+  gsap.fromTo($('.ci-badge', sec), { rotation: -40 }, { rotation: 220, ease: 'none', scrollTrigger: { ...st } });
+  gsap.matchMedia().add('(min-width: 761px)', () => {
+    gsap.fromTo($('.ci-petite', sec), { yPercent: 18 }, { yPercent: -14, ease: 'none', scrollTrigger: { ...st } });
+  });
 }
 
 /* Porté : chaque photo s'ouvre en volets à son arrivée ; sur grand écran, les quatre photos glissent à des vitesses différentes. */
@@ -680,7 +692,7 @@ voileDisque();
 demarrer({
   /* Onde de choc WebGL : ordinateur et tablette seulement (sur téléphone, l'intro porte la signature). */
   pret: [document.querySelector('[data-onde-choc]') && !etat.calme && window.innerWidth > 760
-    ? import('./onde-choc.js?v=3').then((m) => { onde = m.initOndeChoc(document.querySelector('[data-onde-choc]')); return onde && onde.pret; }).catch((err) => console.warn('[onde-choc]', err))
+    ? import('./onde-choc.js?v=4').then((m) => { onde = m.initOndeChoc(document.querySelector('[data-onde-choc]')); return onde && onde.pret; }).catch((err) => console.warn('[onde-choc]', err))
     : null].filter(Boolean),
   preparer() {
     initPanier();
@@ -689,7 +701,7 @@ demarrer({
     if (page === 'contact') initEtapes();
     if (!gsap || !ST) return;
     const faire = (fn) => { try { fn(); } catch (err) { console.error('[vizrok]', fn.name, err); } };
-    [enteteApresSaut, fichesVivantes, magnesie, heroTelephone, chrono, rubanVitesse, manifeste, porte, collections, maillot, neon, disquesRoulent, scanner, shaker, colisCarte, ticketVestiaire, bordereau, disque404].forEach(faire);
+    [enteteApresSaut, fichesVivantes, magnesie, heroTelephone, chrono, rubanVitesse, manifeste, collectionBlanche, porte, collections, maillot, neon, disquesRoulent, scanner, shaker, colisCarte, ticketVestiaire, bordereau, disque404].forEach(faire);
     /* Épinglages créés ici après ceux du socle : ordre recalculé selon la page, puis un seul refresh regroupé. */
     ST.sort();
     rafraichir();

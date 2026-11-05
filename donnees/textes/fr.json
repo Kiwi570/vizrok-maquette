@@ -185,6 +185,22 @@
       "texte": "Les pièces Vizrok portées. Survole une photo, ou touche-la, pour voir la pièce et la choisir.",
       "region": "Pièces portées",
       "alt": "{piece} Vizrok porté"
+    },
+    "collection": {
+      "surtitre": "La collection",
+      "titre": "Pensée pour la salle. Taillée pour la rue.",
+      "texte": "Hoodies, pulls, t-shirts, maillot mesh et accessoires : chaque pièce Vizrok est fabriquée à la demande, puis expédiée chez toi.",
+      "c1": "pièces dans la boutique",
+      "c2t": "S → 4XL",
+      "c2": "selon la pièce",
+      "c3t": "À la demande",
+      "c3": "chaque pièce est fabriquée pour toi",
+      "action": "Voir les vêtements",
+      "seance": "Composer ma séance",
+      "alt1": "Hoodie Cotton Heritage Vizrok porté",
+      "alt2": "Pull Cotton Heritage Vizrok porté",
+      "badge": "NOUVELLE COLLECTION · VIZROK · ",
+      "fond": "VIZROK · BUILT TO PERFORM · VIZROK ·"
     }
   },
   "boutique": {

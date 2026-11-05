@@ -3,10 +3,10 @@
    de démarrer couverte) ; 3. la nouvelle page se prépare sous le voile ; 4. le voile se retire.
    Les liens vers la page en cours font défiler sans recharger (chemins normalisés, cleanUrls).
    Les grands sauts dans une même page passent aussi sous le voile. */
-import { html, etat, chemin, stockage, emettre } from './etat.js?v=3';
-import { aller, bloquerDefilement, debloquerDefilement } from './defilement.js?v=3';
-import { fermerMenu } from './entete.js?v=3';
-import { suivre, lacher } from './gouttiere.js?v=3';
+import { html, etat, chemin, stockage, emettre } from './etat.js?v=4';
+import { aller, bloquerDefilement, debloquerDefilement } from './defilement.js?v=4';
+import { fermerMenu } from './entete.js?v=4';
+import { suivre, lacher } from './gouttiere.js?v=4';
 
 const prechargees = new Set();
 let enDepart = false;

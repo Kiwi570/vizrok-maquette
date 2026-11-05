@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="3" data-page="accueil" data-curseur>
+<html lang="fr" data-v="4" data-page="accueil" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -41,15 +41,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/titres-900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/texte-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=3">
-<link rel="stylesheet" href="/assets/css/site.css?v=3">
-<link rel="modulepreload" href="/assets/js/site.js?v=3">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=3">
+<link rel="stylesheet" href="/assets/css/socle.css?v=4">
+<link rel="stylesheet" href="/assets/css/site.css?v=4">
+<link rel="modulepreload" href="/assets/js/site.js?v=4">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=4">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
 <script src="/assets/vendor/Flip.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=3"></script>
+<script type="module" src="/assets/js/site.js?v=4"></script>
 <meta name="theme-color" content="#050B14">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -123,84 +123,37 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="ruban" id="ruban" data-ruban data-boucle-css><p><span>Built to Perform · Fuel your performance · Plus fort. Plus loin. Plus lourd. · Nouvelle collection. Nouveau niveau. ·</span> <span aria-hidden="true">Built to Perform · Fuel your performance · Plus fort. Plus loin. Plus lourd. · Nouvelle collection. Nouveau niveau. ·</span></p></div>
   <button type="button" class="ruban-pause" data-pause-pour="ruban" data-libelle-pause="Pause" data-libelle-lecture="Lecture"><span data-libelle-bouton>Pause</span></button>
 </div>
-<section class="manifeste" id="manifeste">
-  <div class="manifeste-fond" aria-hidden="true"><figure class="media " data-grok data-fx="parallaxe" data-fx-force="12" style="--cadrage:50% 60%">
+<section class="clair collection-intro" id="collection" data-effet="collection-blanche">
+  <div class="ci-fond-texte" aria-hidden="true" data-audit-ignorer><span>VIZROK · BUILT TO PERFORM · VIZROK ·</span></div>
+  <div class="conteneur ci-cadre">
+    <div class="ci-visuels">
+      <figure class="media ci-grande" data-anime="rideau" style="--cadrage:50% 22%">
   <picture>
-    <img src="/assets/images/grok/accueil-manifeste-1280.webp" srcset="/assets/images/grok/accueil-manifeste-640.webp 640w, /assets/images/grok/accueil-manifeste-1280.webp 1280w, /assets/images/grok/accueil-manifeste-1600.webp 1600w" sizes="100vw" alt="" width="1280" height="859" loading="lazy" decoding="async">
-  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
-</figure></div>
-  <div class="conteneur manifeste-cadre">
-    <p class="surtitre">Le manifeste</p>
-    <h2 class="manifeste-texte" data-effet="manifeste" data-mot-a-mot>Performance. Muscle. Energy. Lifestyle.</h2>
-    <p class="manifeste-suite" data-anime="mots">Parce que la différence ne se fait pas dans les paroles… elle se fait à la salle.</p>
-    <p class="manifeste-signature">Vizrok — Built to Perform.</p>
+    <img src="/assets/images/produits/hoodie-cotton-heritage-3-1200.webp" srcset="/assets/images/produits/hoodie-cotton-heritage-3-480.webp 480w, /assets/images/produits/hoodie-cotton-heritage-3-800.webp 800w, /assets/images/produits/hoodie-cotton-heritage-3-1200.webp 1200w" sizes="(max-width: 760px) 86vw, 40vw" alt="Hoodie Cotton Heritage Vizrok porté" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media ci-petite" style="--cadrage:50% 20%">
+  <picture>
+    <img src="/assets/images/produits/pull-cotton-heritage-3-1200.webp" srcset="/assets/images/produits/pull-cotton-heritage-3-480.webp 480w, /assets/images/produits/pull-cotton-heritage-3-800.webp 800w, /assets/images/produits/pull-cotton-heritage-3-1200.webp 1200w" sizes="(max-width: 760px) 40vw, 18vw" alt="Pull Cotton Heritage Vizrok porté" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <svg class="ci-badge" viewBox="0 0 120 120" aria-hidden="true" data-audit-ignorer><defs><path id="ci-cercle" d="M60,60m-44,0a44,44,0,1,1,88,0a44,44,0,1,1,-88,0"/></defs><circle cx="60" cy="60" r="58"/><text><textPath href="#ci-cercle" textLength="272" lengthAdjust="spacing">NOUVELLE COLLECTION · VIZROK · </textPath></text><path class="ci-eclair" d="M64 36 50 62h9l-4 22 15-28h-9z"/></svg>
+    </div>
+    <div class="ci-texte">
+      <p class="surtitre">La collection</p>
+      <h2 data-anime="lignes">Pensée pour la salle. Taillée pour la rue.</h2>
+      <p data-anime>Hoodies, pulls, t-shirts, maillot mesh et accessoires : chaque pièce Vizrok est fabriquée à la demande, puis expédiée chez toi.</p>
+      <ul class="ci-chiffres" data-anime="cascade">
+        <li><strong><span data-compteur="18">18</span></strong><span>pièces dans la boutique</span></li>
+        <li><strong>S → 4XL</strong><span>selon la pièce</span></li>
+        <li><strong>À la demande</strong><span>chaque pièce est fabriquée pour toi</span></li>
+      </ul>
+      <p class="ci-actions" data-anime>
+        <a href="/boutique?collection=vetements" class="bouton" data-libelle="Boutique" data-survol="magnetique">Voir les vêtements</a>
+        <a href="/seance#kit" class="lien-fleche" data-libelle="Ta séance">Composer ma séance</a>
+      </p>
+    </div>
   </div>
-</section>
-<section class="porte" id="porte" data-effet="porte-volets">
-  <div class="conteneur porte-tete">
-    <p class="surtitre">Porté</p>
-    <h2 data-anime="lignes">À la salle, puis dans la rue.</h2>
-    <p>Les pièces Vizrok portées. Survole une photo, ou touche-la, pour voir la pièce et la choisir.</p>
-  </div>
-  <ul class="porte-grille" role="list" aria-label="Pièces portées">
-    <li class="porte-item porte-item--1" data-porte-vitesse="-6">
-      <figure class="porte-cadre">
-        <figure class="media porte-media" style="--cadrage:50% 30%">
-  <picture>
-    <img src="/assets/images/produits/hoodie-lane-seven-3-1200.webp" srcset="/assets/images/produits/hoodie-lane-seven-3-480.webp 480w, /assets/images/produits/hoodie-lane-seven-3-800.webp 800w, /assets/images/produits/hoodie-lane-seven-3-1200.webp 1200w" sizes="(max-width: 760px) 80vw, 26vw" alt="Hoodie Lane Seven Vizrok porté" width="1200" height="1600" loading="lazy" decoding="async">
-  </picture>
-</figure>
-        <span class="porte-volets" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
-      </figure>
-      <div class="porte-etiquette">
-        <p class="porte-nom">Hoodie Lane Seven</p>
-        <p class="porte-prix" data-prix>31,82 € <small>HT</small></p>
-        <button type="button" class="bouton bouton--petit" data-ajouter="hoodie-lane-seven" aria-label="Choisir : Hoodie Lane Seven">Choisir</button>
-      </div>
-    </li><li class="porte-item porte-item--2" data-porte-vitesse="8">
-      <figure class="porte-cadre">
-        <figure class="media porte-media" style="--cadrage:50% 22%">
-  <picture>
-    <img src="/assets/images/produits/tshirt-3-1200.webp" srcset="/assets/images/produits/tshirt-3-480.webp 480w, /assets/images/produits/tshirt-3-800.webp 800w, /assets/images/produits/tshirt-3-1200.webp 1200w" sizes="(max-width: 760px) 80vw, 26vw" alt="T-shirt Comfort Colors Vizrok porté" width="1200" height="1600" loading="lazy" decoding="async">
-  </picture>
-</figure>
-        <span class="porte-volets" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
-      </figure>
-      <div class="porte-etiquette">
-        <p class="porte-nom">T-shirt Comfort Colors</p>
-        <p class="porte-prix" data-prix>23,64 € <small>HT</small></p>
-        <button type="button" class="bouton bouton--petit" data-ajouter="tshirt" aria-label="Choisir : T-shirt Comfort Colors">Choisir</button>
-      </div>
-    </li><li class="porte-item porte-item--3" data-porte-vitesse="-12">
-      <figure class="porte-cadre">
-        <figure class="media porte-media" style="--cadrage:50% 35%">
-  <picture>
-    <img src="/assets/images/produits/casquette-4-1200.webp" srcset="/assets/images/produits/casquette-4-480.webp 480w, /assets/images/produits/casquette-4-800.webp 800w, /assets/images/produits/casquette-4-1200.webp 1200w" sizes="(max-width: 760px) 80vw, 26vw" alt="Casquette Otto Low Profile Vizrok porté" width="1200" height="1600" loading="lazy" decoding="async">
-  </picture>
-</figure>
-        <span class="porte-volets" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
-      </figure>
-      <div class="porte-etiquette">
-        <p class="porte-nom">Casquette Otto Low Profile</p>
-        <p class="porte-prix" data-prix>22,73 € <small>HT</small></p>
-        <button type="button" class="bouton bouton--petit" data-ajouter="casquette" aria-label="Choisir : Casquette Otto Low Profile">Choisir</button>
-      </div>
-    </li><li class="porte-item porte-item--4" data-porte-vitesse="5">
-      <figure class="porte-cadre">
-        <figure class="media porte-media" style="--cadrage:50% 40%">
-  <picture>
-    <img src="/assets/images/produits/pull-stanley-stella-5-1200.webp" srcset="/assets/images/produits/pull-stanley-stella-5-480.webp 480w, /assets/images/produits/pull-stanley-stella-5-800.webp 800w, /assets/images/produits/pull-stanley-stella-5-1200.webp 1200w" sizes="(max-width: 760px) 80vw, 26vw" alt="Pull Stanley/Stella Oversize Vizrok porté" width="1200" height="1600" loading="lazy" decoding="async">
-  </picture>
-</figure>
-        <span class="porte-volets" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
-      </figure>
-      <div class="porte-etiquette">
-        <p class="porte-nom">Pull Stanley/Stella Oversize</p>
-        <p class="porte-prix" data-prix>55,46 € <small>HT</small></p>
-        <button type="button" class="bouton bouton--petit" data-ajouter="pull-stanley-stella" aria-label="Choisir : Pull Stanley/Stella Oversize">Choisir</button>
-      </div>
-    </li>
-  </ul>
 </section>
 <section class="collections" id="collections">
   <div class="collections-fond" aria-hidden="true" data-audit-ignorer><figure class="media " data-grok style="--cadrage:50% 50%">
@@ -275,6 +228,72 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </ol>
   </div>
 </section>
+<section class="clair porte" id="porte" data-effet="porte-volets">
+  <div class="conteneur porte-tete">
+    <p class="surtitre">Porté</p>
+    <h2 data-anime="lignes">À la salle, puis dans la rue.</h2>
+    <p>Les pièces Vizrok portées. Survole une photo, ou touche-la, pour voir la pièce et la choisir.</p>
+  </div>
+  <ul class="porte-grille" role="list" aria-label="Pièces portées">
+    <li class="porte-item porte-item--1" data-porte-vitesse="-6">
+      <figure class="porte-cadre">
+        <figure class="media porte-media" style="--cadrage:50% 30%">
+  <picture>
+    <img src="/assets/images/produits/hoodie-lane-seven-3-1200.webp" srcset="/assets/images/produits/hoodie-lane-seven-3-480.webp 480w, /assets/images/produits/hoodie-lane-seven-3-800.webp 800w, /assets/images/produits/hoodie-lane-seven-3-1200.webp 1200w" sizes="(max-width: 760px) 80vw, 26vw" alt="Hoodie Lane Seven Vizrok porté" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <span class="porte-volets" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      </figure>
+      <div class="porte-etiquette">
+        <p class="porte-nom">Hoodie Lane Seven</p>
+        <p class="porte-prix" data-prix>31,82 € <small>HT</small></p>
+        <button type="button" class="bouton bouton--petit" data-ajouter="hoodie-lane-seven" aria-label="Choisir : Hoodie Lane Seven">Choisir</button>
+      </div>
+    </li><li class="porte-item porte-item--2" data-porte-vitesse="8">
+      <figure class="porte-cadre">
+        <figure class="media porte-media" style="--cadrage:50% 22%">
+  <picture>
+    <img src="/assets/images/produits/tshirt-3-1200.webp" srcset="/assets/images/produits/tshirt-3-480.webp 480w, /assets/images/produits/tshirt-3-800.webp 800w, /assets/images/produits/tshirt-3-1200.webp 1200w" sizes="(max-width: 760px) 80vw, 26vw" alt="T-shirt Comfort Colors Vizrok porté" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <span class="porte-volets" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      </figure>
+      <div class="porte-etiquette">
+        <p class="porte-nom">T-shirt Comfort Colors</p>
+        <p class="porte-prix" data-prix>23,64 € <small>HT</small></p>
+        <button type="button" class="bouton bouton--petit" data-ajouter="tshirt" aria-label="Choisir : T-shirt Comfort Colors">Choisir</button>
+      </div>
+    </li><li class="porte-item porte-item--3" data-porte-vitesse="-12">
+      <figure class="porte-cadre">
+        <figure class="media porte-media" style="--cadrage:50% 35%">
+  <picture>
+    <img src="/assets/images/produits/casquette-4-1200.webp" srcset="/assets/images/produits/casquette-4-480.webp 480w, /assets/images/produits/casquette-4-800.webp 800w, /assets/images/produits/casquette-4-1200.webp 1200w" sizes="(max-width: 760px) 80vw, 26vw" alt="Casquette Otto Low Profile Vizrok porté" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <span class="porte-volets" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      </figure>
+      <div class="porte-etiquette">
+        <p class="porte-nom">Casquette Otto Low Profile</p>
+        <p class="porte-prix" data-prix>22,73 € <small>HT</small></p>
+        <button type="button" class="bouton bouton--petit" data-ajouter="casquette" aria-label="Choisir : Casquette Otto Low Profile">Choisir</button>
+      </div>
+    </li><li class="porte-item porte-item--4" data-porte-vitesse="5">
+      <figure class="porte-cadre">
+        <figure class="media porte-media" style="--cadrage:50% 40%">
+  <picture>
+    <img src="/assets/images/produits/pull-stanley-stella-5-1200.webp" srcset="/assets/images/produits/pull-stanley-stella-5-480.webp 480w, /assets/images/produits/pull-stanley-stella-5-800.webp 800w, /assets/images/produits/pull-stanley-stella-5-1200.webp 1200w" sizes="(max-width: 760px) 80vw, 26vw" alt="Pull Stanley/Stella Oversize Vizrok porté" width="1200" height="1600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <span class="porte-volets" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      </figure>
+      <div class="porte-etiquette">
+        <p class="porte-nom">Pull Stanley/Stella Oversize</p>
+        <p class="porte-prix" data-prix>55,46 € <small>HT</small></p>
+        <button type="button" class="bouton bouton--petit" data-ajouter="pull-stanley-stella" aria-label="Choisir : Pull Stanley/Stella Oversize">Choisir</button>
+      </div>
+    </li>
+  </ul>
+</section>
 <section class="maillot" id="maillot" data-effet="maillot-mesh">
   <div class="maillot-scene">
     <div class="maillot-lueur" aria-hidden="true"></div>
@@ -311,7 +330,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </p>
   </div>
 </section>
-<section class="galerie ecran epingle nouveautes" id="nouveautes" data-fx="galerie">
+<section class="clair galerie ecran epingle nouveautes" id="nouveautes" data-fx="galerie">
   <div class="conteneur galerie-tete">
     <p class="surtitre">Sélection</p>
     <h2 data-anime="lignes">La sélection.</h2>
@@ -391,6 +410,19 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
   <div class="galerie-progres" aria-hidden="true"><span></span></div>
 </section>
+<section class="manifeste" id="manifeste">
+  <div class="manifeste-fond" aria-hidden="true"><figure class="media " data-grok data-fx="parallaxe" data-fx-force="12" style="--cadrage:50% 60%">
+  <picture>
+    <img src="/assets/images/grok/accueil-manifeste-1280.webp" srcset="/assets/images/grok/accueil-manifeste-640.webp 640w, /assets/images/grok/accueil-manifeste-1280.webp 1280w, /assets/images/grok/accueil-manifeste-1600.webp 1600w" sizes="100vw" alt="" width="1280" height="859" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure></div>
+  <div class="conteneur manifeste-cadre">
+    <p class="surtitre">Le manifeste</p>
+    <h2 class="manifeste-texte" data-effet="manifeste" data-mot-a-mot>Performance. Muscle. Energy. Lifestyle.</h2>
+    <p class="manifeste-suite" data-anime="mots">Parce que la différence ne se fait pas dans les paroles… elle se fait à la salle.</p>
+    <p class="manifeste-signature">Vizrok — Built to Perform.</p>
+  </div>
+</section>
 <section class="nutri" id="nutrition">
   <figure class="media nutri-fond" data-grok data-fx="zoom" aria-hidden="true" style="--cadrage:50% 50%">
   <picture>
@@ -409,7 +441,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </ul>
   </div>
 </section>
-<section class="garanties conteneur" id="garanties">
+<section class="clair garanties conteneur" id="garanties">
   <figure class="media garanties-media" data-grok data-anime="rideau" style="--cadrage:50% 55%">
   <picture>
     <img src="/assets/images/grok/accueil-garanties-1080.webp" srcset="/assets/images/grok/accueil-garanties-480.webp 480w, /assets/images/grok/accueil-garanties-784.webp 784w, /assets/images/grok/accueil-garanties-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 36vw" alt="Colis en carton posé sur un sol de salle" width="1080" height="1609" loading="lazy" decoding="async">

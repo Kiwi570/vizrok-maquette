@@ -2,7 +2,7 @@
    déforme la photo depuis le point d'impact ; un clic ou un toucher sur le héros en relance un ; la vitesse
    du défilement fait onduler l'image. Le canvas n'est visible que pendant le mouvement : au repos, la vraie photo,
    nette. Calé sur l'image (object-fit: cover et object-position). Sans WebGL ou en mode calme : rien, la photo reste. */
-import { etat, boucle } from './socle/index.js?v=3';
+import { etat, boucle } from './socle/index.js?v=4';
 
 const VS = `attribute vec2 p; varying vec2 v; void main(){ v = p * .5 + .5; gl_Position = vec4(p, 0., 1.); }`;
 const FS = `precision mediump float;

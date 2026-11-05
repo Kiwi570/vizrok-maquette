@@ -1,5 +1,13 @@
 # Journal des versions
 
+## v4 — 5 novembre 2026
+
+Ce qui a changé :
+
+- **Accueil, nouvelle deuxième section « La collection »**, sur fond blanc : grande photo portée (hoodie), seconde photo (pull) qui glisse plus vite, badge « Nouvelle collection » qui tourne au défilement, texte géant en fond, chiffres clés (18 pièces, S → 4XL selon la pièce, fabriqué à la demande) et accès aux vêtements.
+- **Accueil, nouvel ordre** : ouverture, ruban, la collection (blanc), quatre disques (nuit), Porté (blanc), maillot mesh (nuit), la sélection (blanc), manifeste (nuit, déplacé plus bas), nutrition, garanties (blanc), réseaux, appel final.
+- **Sections claires sur les autres pages** : grille de la boutique, guide des tailles et appel final de Ta séance, six saveurs de la nutrition, remboursements et paiements de la livraison. Le texte vert passe en vert profond sur le blanc, le vert néon reste pour les boutons.
+
 ## v3 — 5 novembre 2026
 
 Ce qui a changé :

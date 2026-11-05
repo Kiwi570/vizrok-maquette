@@ -867,3 +867,49 @@ html.calme .casier .etapes-form { animation: none; }
 .ticket-mention { margin: 8px 0 0; font-size: 11px; color: #5A606B; }
 .ticket-code { margin-top: 10px; height: 26px; background: repeating-linear-gradient(90deg, #14181F 0 2px, transparent 2px 4px, #14181F 4px 5px, transparent 5px 8px, #14181F 8px 11px, transparent 11px 12px); }
 @media (max-width: 760px) { .ticket { position: relative; right: auto; top: auto; margin: 18px auto 0; width: 200px; } }
+
+/* Sections claires (fond blanc cassé) : elles alternent avec les sections de nuit. Les couleurs sont redéfinies localement ;
+   le vert néon reste pour les aplats (boutons), un vert profond le remplace pour le texte. Les éléments sombres posés dedans
+   (étiquettes, ajout rapide) gardent leurs couleurs de nuit. */
+.clair { --fond: #F3F3EF; --texte: #0B1626; --texte-doux: #4A5566; --ligne: rgba(11,22,38,.14); --surface: #FFFFFF; --surface-2: #E6E8E4; --vert-texte: #077A3B; background: var(--fond); color: var(--texte); }
+.clair.conteneur { box-shadow: 0 0 0 100vmax var(--fond); clip-path: inset(0 -100vmax); }
+.clair :is(.surtitre, .lien-fleche, .garantie-chiffre, .b-compte strong, .tailles-table tbody th, .b-titre-compte) { color: var(--vert-texte); }
+.clair :is(.garanties-trait, .fin-disques) { color: #10A452; }
+.clair .tailles-schema { color: var(--vert-texte); }
+.clair .tailles-table em { color: #7A5C00; }
+.clair .fiche-note span { color: #6E5A00; border-color: #B79A00; }
+.clair .champ :is(input, select, textarea) { background: #FFFFFF; border-color: rgba(11,22,38,.35); color: var(--texte); }
+.clair .galerie-progres span { background: var(--vert-texte); }
+.clair .rembours-grille li { box-shadow: 0 1px 0 rgba(11,22,38,.06), 0 14px 30px rgba(11,22,38,.06); }
+.clair .rembours-grille li:nth-child(2) { border-color: #C9D400; } .clair .rembours-grille li:nth-child(4) { border-color: #0B1626; }
+.clair .fiche { border-color: rgba(11,22,38,.1); box-shadow: 0 10px 24px rgba(11,22,38,.06); }
+.clair :is(.porte-etiquette, .fiche-rapide, .visuel-code) { --texte: #EAF2F5; --texte-doux: #9FB0C0; color: var(--texte); }
+.clair .porte-cadre::after { background: linear-gradient(180deg, rgba(243,243,239,0) 62%, rgba(11,22,38,.28)); }
+.clair .porte-media img { filter: none; }
+.clair .porte-volets i { background: var(--fond); }
+
+/* Accueil, la collection (claire) : grande photo portée, seconde photo qui glisse, badge qui tourne, texte géant en fond. */
+.collection-intro { position: relative; overflow: hidden; isolation: isolate; padding-block: clamp(72px, 14vh, 160px); }
+.ci-fond-texte { position: absolute; left: 0; top: 50%; z-index: -1; transform: translateY(-50%); white-space: nowrap; pointer-events: none; font: 900 clamp(7rem, 21vw, 21rem)/.9 var(--police-titres); text-transform: uppercase; color: transparent; -webkit-text-stroke: 1.5px rgba(11,22,38,.09); }
+.ci-fond-texte span { display: inline-block; will-change: transform; }
+.ci-cadre { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 96px); align-items: center; }
+.ci-visuels { position: relative; padding: 0 14% 16% 0; }
+.ci-grande { aspect-ratio: 4 / 5; border-radius: 4px; background: #E4E4E4; }
+.ci-grande img, .ci-petite img { object-fit: cover; object-position: var(--cadrage, 50% 25%); }
+.ci-petite { position: absolute; right: 0; bottom: 0; width: 46%; aspect-ratio: 3 / 4; border-radius: 4px; background: #E4E4E4; border: 6px solid var(--fond); box-shadow: 0 30px 60px rgba(11,22,38,.22); }
+.ci-badge { position: absolute; left: -28px; top: -28px; width: clamp(110px, 11vw, 150px); height: auto; overflow: visible; }
+.ci-badge circle { fill: var(--vert); }
+.ci-badge text { font: 700 11px var(--police-mono); letter-spacing: 1px; fill: #050B14; }
+.ci-badge .ci-eclair { fill: #050B14; }
+.ci-texte h2 { font-size: clamp(2.4rem, 4.6vw, 4.6rem); }
+.ci-texte > p { max-width: 34em; }
+.ci-chiffres { list-style: none; margin: 28px 0; padding: 18px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; border-top: 2px solid var(--texte); }
+.ci-chiffres strong { display: block; font: 900 clamp(1.7rem, 3vw, 3rem)/1 var(--police-titres); text-transform: uppercase; margin-bottom: 6px; }
+.ci-chiffres li > span { color: var(--texte-doux); font-size: .92rem; }
+.ci-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; margin: 0; }
+@media (max-width: 760px) {
+  .ci-cadre { grid-template-columns: 1fr; }
+  .ci-visuels { padding: 0 18% 20% 0; }
+  .ci-badge { left: -8px; top: -14px; }
+  .ci-chiffres { grid-template-columns: 1fr 1fr; }
+}

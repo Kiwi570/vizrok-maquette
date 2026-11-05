@@ -1,19 +1,6 @@
 {
   "echecs": [],
-  "aRegarder": [
-    {
-      "niveau": "regarder",
-      "controle": "fluidité",
-      "detail": "4 % d'images de plus de 50 ms",
-      "etape": "fluidite",
-      "page": "/",
-      "taille": "1366×768",
-      "mode": "défilement à la molette, processeur ralenti 4 fois",
-      "lieux": [
-        "1366×768 défilement à la molette, processeur ralenti 4 fois"
-      ]
-    }
-  ],
+  "aRegarder": [],
   "nonLances": [],
   "oks": {
     "vercel.json": 1,
@@ -21,15 +8,12 @@
     "robots.txt": 1,
     "numéro de version": 1,
     "langues": 1,
-    "mesures": 11,
-    "balayage": 1,
-    "fluidité": 2,
-    "défilement selon l’appareil": 5
+    "mesures": 22,
+    "balayage": 2
   },
   "infos": [
-    "Numéro de version des fichiers : ?v=3",
-    "Audit standard : étapes lourdes sur /.",
-    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
-    "Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1427, tâche la plus longue 0 ms"
+    "Numéro de version des fichiers : ?v=4",
+    "Audit standard : étapes lourdes sur /, /seance.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés."
   ]
 }

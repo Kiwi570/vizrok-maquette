@@ -1,15 +1,16 @@
-# Vizrok.store — maquette v3
+# Vizrok.store — maquette v4
 
 Maquette de la boutique Vizrok.store, direction « Salle de nuit » : bleu nuit #050B14, vert néon de la marque, jaune et orange néon des maillots.
 Site statique (HTML, CSS, JavaScript), généré depuis `donnees/` par `node outils/generer.mjs`, prêt pour Vercel (cleanUrls).
 
 ## Pages
 
+Les sections de nuit alternent avec des sections claires (classe `clair`, fond #F3F3EF).
 Changement de page : un disque de fonte roule, couvre l'écran puis repart (sauf en mode calme).
 
 | Page | Ouverture | Effets propres |
 |---|---|---|
-| Accueil | Intro « la barre se charge » (disques, compteur 00 → 18 pièces), puis la barre tombe sur le titre (magnésie, onde de choc WebGL) | ruban réactif à la vitesse, manifeste mot à mot, section Porté en volets, collections épinglées (disques), maillot mesh, néon des réseaux |
+| Accueil | Intro « la barre se charge » (disques, compteur 00 → 18 pièces), puis la barre tombe sur le titre (magnésie, onde de choc WebGL) | ruban réactif à la vitesse, la collection (claire), collections épinglées (disques), Porté en volets (clair), maillot mesh, sélection (claire), manifeste mot à mot, garanties (claires), néon des réseaux |
 | Boutique | Compacte, disques-filtres qui roulent | catalogue filtrable en Flip, fiches vivantes (vue portée, inclinaison, ajout rapide), recherche, tri, fiche en volet avec son lien (`?produit=`), panier |
 | Ta séance | Chrono LED qui devient le titre | scanner du maillot épinglé (ligne laser, repères, loupe), guide des tailles en cm, kit au vestiaire |
 | Nutrition | Étiquette nutritionnelle tracée, valeurs « à compléter » | shaker vivant (couleur par produit, vagues, bulles), saveurs, mentions obligatoires |
