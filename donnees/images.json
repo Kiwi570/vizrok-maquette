@@ -1,0 +1,239 @@
+{
+ "grok/accueil-ouverture": {
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": [
+   640,
+   1080
+  ],
+  "ratio": 1.4898,
+  "alt": "Salle de musculation vide la nuit, une barre posée au sol sous un projecteur",
+  "role": "ouverture",
+  "page": "accueil",
+  "cadrage": "64% 60%",
+  "genere": true,
+  "source": "recu/grok/accueil-ouverture.jpg"
+ },
+ "grok/accueil-manifeste": {
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": [],
+  "ratio": 1.4898,
+  "alt": "Poussière de magnésie en suspension au-dessus d'un sol de salle",
+  "role": "section-fond",
+  "page": "accueil",
+  "cadrage": "50% 50%",
+  "genere": true,
+  "source": "recu/grok/accueil-manifeste.jpg"
+ },
+ "grok/accueil-collections": {
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": [],
+  "ratio": 1.4898,
+  "alt": "Texture de sol en caoutchouc de salle de sport",
+  "role": "section-fond",
+  "page": "accueil",
+  "cadrage": "50% 50%",
+  "genere": true,
+  "source": "recu/grok/accueil-collections.jpg"
+ },
+ "grok/accueil-nutrition": {
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": [],
+  "ratio": 1.4898,
+  "alt": "Gouttelettes d'eau sur une surface d'acier noir",
+  "role": "section-fond",
+  "page": "accueil",
+  "cadrage": "50% 50%",
+  "genere": true,
+  "source": "recu/grok/accueil-nutrition.jpg"
+ },
+ "grok/accueil-garanties": {
+  "largeurs": [
+   480,
+   784,
+   1080
+  ],
+  "mobile": [],
+  "ratio": 0.6712,
+  "alt": "Colis en carton posé sur un sol de salle",
+  "role": "carte-service",
+  "page": "accueil",
+  "cadrage": "50% 55%",
+  "genere": true,
+  "source": "recu/grok/accueil-garanties.jpg"
+ },
+ "grok/accueil-reseaux": {
+  "largeurs": [
+   480,
+   784,
+   1080
+  ],
+  "mobile": [],
+  "ratio": 0.6712,
+  "alt": "Silhouette de dos au fond d'une salle éclairée en vert",
+  "role": "portrait",
+  "page": "accueil",
+  "cadrage": "50% 55%",
+  "genere": true,
+  "source": "recu/grok/accueil-reseaux.jpg"
+ },
+ "grok/boutique-rayon": {
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": [],
+  "ratio": 1.4898,
+  "alt": "Portant noir vide avec des cintres en acier",
+  "role": "section-fond",
+  "page": "boutique",
+  "cadrage": "70% 50%",
+  "genere": true,
+  "source": "recu/grok/boutique-rayon.jpg"
+ },
+ "grok/seance-ouverture": {
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": [
+   640,
+   1080
+  ],
+  "ratio": 1.4898,
+  "alt": "Coin d'entraînement vide avec banc et rack sous un projecteur",
+  "role": "ouverture",
+  "page": "seance",
+  "cadrage": "66% 55%",
+  "genere": true,
+  "source": "recu/grok/seance-ouverture.jpg"
+ },
+ "grok/seance-vestiaire": {
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": [],
+  "ratio": 1.4898,
+  "alt": "Mur de vestiaire avec une rangée de crochets vides au-dessus d'un banc",
+  "role": "section-fond",
+  "page": "seance",
+  "cadrage": "50% 60%",
+  "genere": true,
+  "source": "recu/grok/seance-vestiaire.jpg"
+ },
+ "grok/seance-acier": {
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": [],
+  "ratio": 1.4898,
+  "alt": "Gros plan sur le moletage d'une barre en acier",
+  "role": "section-fond",
+  "page": "seance",
+  "cadrage": "50% 50%",
+  "genere": true,
+  "source": "recu/grok/seance-acier.jpg"
+ },
+ "grok/nutrition-bandeau": {
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": [],
+  "ratio": 1.4898,
+  "alt": "Plan de travail en ardoise avec quelques gouttes d'eau",
+  "role": "section-fond",
+  "page": "nutrition",
+  "cadrage": "50% 50%",
+  "genere": true,
+  "source": "recu/grok/nutrition-bandeau.jpg"
+ },
+ "grok/livraison-ouverture": {
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": [
+   640,
+   1080
+  ],
+  "ratio": 1.4898,
+  "alt": "Colis en carton empilés sur une étagère en acier, dans la pénombre",
+  "role": "ouverture",
+  "page": "livraison",
+  "cadrage": "72% 50%",
+  "genere": true,
+  "source": "recu/grok/livraison-ouverture.jpg"
+ },
+ "grok/livraison-colis": {
+  "largeurs": [
+   480,
+   784,
+   1080
+  ],
+  "mobile": [],
+  "ratio": 0.6712,
+  "alt": "Mains qui ferment un colis en carton sur un établi",
+  "role": "carte-service",
+  "page": "livraison",
+  "cadrage": "50% 55%",
+  "genere": true,
+  "source": "recu/grok/livraison-colis.jpg"
+ },
+ "grok/contact-ouverture": {
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": [
+   640,
+   1080
+  ],
+  "ratio": 1.4898,
+  "alt": "Rangée de casiers sombres, une porte entrouverte d'où sort une lueur verte",
+  "role": "ouverture",
+  "page": "contact",
+  "cadrage": "76% 50%",
+  "genere": true,
+  "source": "recu/grok/contact-ouverture.jpg"
+ },
+ "grok/404": {
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": [],
+  "ratio": 1.4898,
+  "alt": "Un disque de fonte seul sur le sol d'une salle vide",
+  "role": "404",
+  "page": "404",
+  "cadrage": "50% 55%",
+  "genere": true,
+  "source": "recu/grok/404.jpg"
+ }
+}

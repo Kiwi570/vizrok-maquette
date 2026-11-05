@@ -1,0 +1,526 @@
+[
+  {
+    "id": "maillot",
+    "slug": "vizrok-store-maillot-de-sport",
+    "nom": "Vizrok.store Maillot de sport",
+    "court": "Maillot de sport",
+    "categorie": "vetements",
+    "prix": 22.73,
+    "phare": true,
+    "nouveaute": false,
+    "description": "Maillot de sport unisexe léger en mesh polyester respirant, imprimé au visuel Vizrok.",
+    "details": [
+      "100 % polyester respirant (mesh)",
+      "Tissu léger (4,13 oz)",
+      "Coupe ample, longueur allongée",
+      "Manches raglan courtes, col rond bordé",
+      "Coutures latérales, étiquette détachable"
+    ],
+    "couleurs": [
+      {
+        "nom": "Blanc",
+        "hex": "#F2F4F2"
+      },
+      {
+        "nom": "Jaune néon",
+        "hex": "#E6FF3B"
+      },
+      {
+        "nom": "Orange néon",
+        "hex": "#FF7A1F"
+      }
+    ],
+    "tailles": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "coloriPhoto": "Blanc",
+    "teinte": true
+  },
+  {
+    "id": "tshirt",
+    "slug": "t-shirt-vizrok-comfort-colors",
+    "nom": "T-shirt Vizrok Comfort Colors",
+    "court": "T-shirt Comfort Colors",
+    "categorie": "vetements",
+    "prix": 23.64,
+    "nouveaute": true,
+    "description": "T-shirt en coton épais, coupe ample, logo néon Vizrok au centre de la poitrine.",
+    "details": [
+      "100 % coton filé à l'anneau",
+      "Tissu épais (6,1 oz)",
+      "Coupe ample"
+    ],
+    "couleurs": [
+      {
+        "nom": "Blanc",
+        "hex": "#F2F2EE"
+      },
+      {
+        "nom": "Noir",
+        "hex": "#16171A"
+      },
+      {
+        "nom": "Pepper",
+        "hex": "#4A4A48"
+      }
+    ],
+    "tailles": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL"
+    ],
+    "coloriPhoto": "Blanc"
+  },
+  {
+    "id": "pantalon",
+    "slug": "pantalon-vizrok-comfort-colors",
+    "nom": "Pantalon Vizrok Comfort Colors",
+    "court": "Pantalon Comfort Colors",
+    "categorie": "vetements",
+    "prix": 40.91,
+    "description": "Pantalon de jogging en coton, coupe ample, logo néon Vizrok sur la jambe gauche.",
+    "details": [
+      "100 % coton filé à l'anneau, épaisseur moyenne (6,5 oz)",
+      "Teint après confection : toucher doux, faible rétrécissement",
+      "Deux poches avant doublées",
+      "Taille et chevilles côtelées, cordon naturel"
+    ],
+    "couleurs": [
+      {
+        "nom": "Ivoire",
+        "hex": "#EDE6D6"
+      },
+      {
+        "nom": "Peachy",
+        "hex": "#E9B79A"
+      },
+      {
+        "nom": "Hydrangea",
+        "hex": "#7D93B8"
+      }
+    ],
+    "tailles": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "nouveaute": false,
+    "coloriPhoto": "Ivoire"
+  },
+  {
+    "id": "hoodie-lane-seven",
+    "slug": "vizrok-lane-seven-hoodie",
+    "nom": "Vizrok Lane Seven Hoodie",
+    "court": "Hoodie Lane Seven",
+    "categorie": "vetements",
+    "prix": 31.82,
+    "nouveaute": true,
+    "description": "Sweat à capuche unisexe, logo Vizrok imprimé au centre de la poitrine. Taille petit : prendre une taille au-dessus.",
+    "details": [
+      "80 % coton, 20 % polyester recyclé (selon la couleur)",
+      "Épaisseur moyenne (8,25 oz), face 100 % coton",
+      "Capuche trois panneaux doublée",
+      "Poche kangourou, poignets et bas côtelés",
+      "Cordons assortis à embouts, œillets métal"
+    ],
+    "couleurs": [
+      {
+        "nom": "Blanc",
+        "hex": "#F2F2EE"
+      },
+      {
+        "nom": "Noir",
+        "hex": "#16171A"
+      },
+      {
+        "nom": "Anthracite chiné",
+        "hex": "#45474C"
+      },
+      {
+        "nom": "Rose pâle",
+        "hex": "#F1CFD3"
+      }
+    ],
+    "tailles": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "coloriPhoto": "Blanc"
+  },
+  {
+    "id": "hoodie-cotton-heritage",
+    "slug": "vizrok-cotton-heritage-hoodie",
+    "nom": "Vizrok Cotton Heritage Hoodie",
+    "court": "Hoodie Cotton Heritage",
+    "categorie": "vetements",
+    "prix": 37.28,
+    "description": "Sweat à capuche unisexe épais, logo imprimé au centre de la poitrine. Taille petit : prendre une taille au-dessus.",
+    "details": [
+      "65 % coton filé à l'anneau, 35 % polyester (selon la couleur)",
+      "Tissu épais (8,5 oz)",
+      "Coupe classique, peut être un peu ajustée"
+    ],
+    "couleurs": [
+      {
+        "nom": "Blanc",
+        "hex": "#F2F2EE"
+      },
+      {
+        "nom": "Noir",
+        "hex": "#16171A"
+      },
+      {
+        "nom": "Anthracite chiné",
+        "hex": "#45474C"
+      },
+      {
+        "nom": "Lavande",
+        "hex": "#B9A8D6"
+      }
+    ],
+    "tailles": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "nouveaute": false,
+    "coloriPhoto": "Blanc"
+  },
+  {
+    "id": "pull-cotton-heritage",
+    "slug": "pull-vizrok-cotton-heritage",
+    "nom": "Pull Vizrok Cotton Heritage",
+    "court": "Pull Cotton Heritage",
+    "categorie": "vetements",
+    "prix": 32.73,
+    "description": "Sweat unisexe épais en coton mélangé, logo néon Vizrok au centre.",
+    "details": [
+      "65 % coton, 35 % polyester, face 100 % coton (selon la couleur)",
+      "Tissu épais (8,5 oz)",
+      "Coupe classique"
+    ],
+    "couleurs": [
+      {
+        "nom": "Blanc",
+        "hex": "#F2F2EE"
+      },
+      {
+        "nom": "Noir",
+        "hex": "#16171A"
+      },
+      {
+        "nom": "Anthracite chiné",
+        "hex": "#45474C"
+      }
+    ],
+    "tailles": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "nouveaute": false,
+    "coloriPhoto": "Blanc"
+  },
+  {
+    "id": "pull-stanley-stella",
+    "slug": "pull-vizrok-stanley-stella-oversize",
+    "nom": "Pull Vizrok Stanley/Stella Oversize",
+    "court": "Pull Stanley/Stella Oversize",
+    "categorie": "vetements",
+    "prix": 55.46,
+    "nouveaute": true,
+    "description": "Sweat unisexe oversize en coton biologique, logo néon Vizrok au centre.",
+    "details": [
+      "80 % coton biologique, 20 % polyester recyclé",
+      "Tissu épais (10,3 oz), intérieur gratté",
+      "Coupe oversize, bords côtes 2×2",
+      "Tissu certifié GOTS et OEKO-TEX Standard 100, PETA-Approved Vegan"
+    ],
+    "couleurs": [
+      {
+        "nom": "Blanc",
+        "hex": "#F2F2EE"
+      },
+      {
+        "nom": "Gris chiné",
+        "hex": "#A5A7AB"
+      },
+      {
+        "nom": "Noir",
+        "hex": "#16171A"
+      }
+    ],
+    "tailles": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "coloriPhoto": "Blanc"
+  },
+  {
+    "id": "bob",
+    "slug": "vizrok-big-accessories-bucket-hat",
+    "nom": "Vizrok Big Accessories Bucket Hat",
+    "court": "Bob Big Accessories",
+    "categorie": "accessoires",
+    "prix": 25.46,
+    "nouveaute": true,
+    "description": "Bob de la ligne Vizrok Big Accessories, emblème éclair sur le devant.",
+    "details": [
+      "100 % sergé de coton",
+      "Calotte haute (7,6 cm), bord de 5,1 cm",
+      "Œillets brodés pour l'aération",
+      "Taille unique"
+    ],
+    "couleurs": [],
+    "tailles": [
+      "Taille unique"
+    ]
+  },
+  {
+    "id": "casquette",
+    "slug": "vizrok-casquette-otto-cap-low-profile",
+    "nom": "Vizrok Casquette Otto Cap Low Profile",
+    "court": "Casquette Otto Low Profile",
+    "categorie": "accessoires",
+    "prix": 22.73,
+    "description": "Casquette basse non structurée, emblème éclair sur le devant.",
+    "details": [
+      "100 % sergé de coton",
+      "Six panneaux, calotte souple",
+      "Fermeture réglable à scratch",
+      "Visière précourbée, tour de tête 58 cm"
+    ],
+    "couleurs": [
+      {
+        "nom": "Blanc",
+        "hex": "#F2F2EE"
+      },
+      {
+        "nom": "Kaki",
+        "hex": "#9C8F6A"
+      },
+      {
+        "nom": "Rouge",
+        "hex": "#C8252B"
+      }
+    ],
+    "tailles": [
+      "Taille unique"
+    ],
+    "nouveaute": true,
+    "coloriPhoto": "Blanc"
+  },
+  {
+    "id": "gourde",
+    "slug": "vizrok-stainless-steel-water-bottle",
+    "nom": "Vizrok Stainless Steel Water Bottle",
+    "court": "Gourde inox",
+    "categorie": "accessoires",
+    "prix": 28.18,
+    "description": "Gourde isotherme en acier inoxydable aux couleurs de Vizrok.",
+    "details": [
+      "500 ml, 27 × 7 cm",
+      "Double paroi isolée sous vide : chaud ou froid pendant 6 heures",
+      "Bouchon vissé étanche et sans odeur",
+      "Lavage à la main"
+    ],
+    "couleurs": [
+      {
+        "nom": "Noir",
+        "hex": "#16171A"
+      },
+      {
+        "nom": "Blanc",
+        "hex": "#F2F2EE"
+      }
+    ],
+    "tailles": [
+      "500 ml"
+    ],
+    "nouveaute": true,
+    "coloriPhoto": "Noir"
+  },
+  {
+    "id": "verre-shaker",
+    "slug": "vizrok-shaker-pint-glass",
+    "nom": "Vizrok Shaker Pint Glass",
+    "court": "Verre shaker",
+    "categorie": "accessoires",
+    "prix": 22.73,
+    "description": "Verre de 473 ml au logo Vizrok.",
+    "details": [
+      "100 % verre, 473 ml",
+      "Hauteur 15 cm, diamètre 9 cm en haut et 6 cm en bas",
+      "Ni lave-vaisselle ni micro-ondes"
+    ],
+    "couleurs": [],
+    "tailles": [
+      "473 ml"
+    ],
+    "nouveaute": false
+  },
+  {
+    "id": "verre-canette",
+    "slug": "vizrok-store-verre-en-forme-de-canette",
+    "nom": "Vizrok.store Verre en forme de canette",
+    "court": "Verre canette",
+    "categorie": "accessoires",
+    "prix": 20.0,
+    "description": "Verre transparent en forme de canette, imprimé au visuel Vizrok.",
+    "details": [
+      "Verre transparent, 473 ml",
+      "Hauteur 14 cm, diamètre 7,6 cm",
+      "Fabriqué aux États-Unis, lavage à la main"
+    ],
+    "couleurs": [],
+    "tailles": [
+      "473 ml"
+    ],
+    "nouveaute": false
+  },
+  {
+    "id": "poster",
+    "slug": "poster-vizrok-paysage",
+    "nom": "Poster Vizrok paysage",
+    "court": "Poster paysage",
+    "categorie": "deco",
+    "prix": 15.0,
+    "description": "Poster Vizrok au format paysage, finition mate.",
+    "details": [
+      "30,5 × 40,6 cm (12 × 16 pouces)",
+      "Papier mat 189 g/m², 0,26 mm"
+    ],
+    "couleurs": [],
+    "tailles": [
+      "30,5 × 40,6 cm"
+    ],
+    "nouveaute": false
+  },
+  {
+    "id": "nutrimax",
+    "slug": "nutrimax",
+    "nom": "Nutrimax",
+    "court": "Nutrimax",
+    "categorie": "nutrition",
+    "prix": 40.91,
+    "description": "La gamme NutriMax : whey goût chocolat, gainer, BCAA goût fruits rouges, pré-workout, électrolytes, multivitamines, oméga-3 et barre protéinée.",
+    "details": [
+      "Contenu exact livré pour ce prix : à compléter",
+      "Composition, valeurs nutritionnelles et allergènes : à compléter"
+    ],
+    "couleurs": [],
+    "tailles": [
+      "Contenu à compléter"
+    ],
+    "aCompleter": true,
+    "nouveaute": false
+  },
+  {
+    "id": "energy",
+    "slug": "vizrok-energy",
+    "nom": "VIZROK ENERGY",
+    "court": "Vizrok Energy",
+    "categorie": "nutrition",
+    "prix": 12.73,
+    "description": "Boisson énergisante de la gamme Vizrok Nutrition, au goût frais.",
+    "details": [
+      "Contenance et teneur en caféine : à compléter",
+      "Composition, valeurs nutritionnelles et allergènes : à compléter"
+    ],
+    "couleurs": [],
+    "tailles": [
+      "Contenance à compléter"
+    ],
+    "aCompleter": true,
+    "nouveaute": false
+  },
+  {
+    "id": "barre",
+    "slug": "vizrok-nutrition-barre-chocolat-proteinees",
+    "nom": "Vizrok nutrition-Barre chocolat protéinées",
+    "court": "Barre protéinée",
+    "categorie": "nutrition",
+    "prix": 15.91,
+    "description": "Barre de 55 g à 25 % de protéines, sans huile de palme, en six saveurs.",
+    "details": [
+      "55 g par barre, 25 % de protéines, sans huile de palme",
+      "Nombre de barres pour ce prix : à compléter",
+      "Composition, valeurs nutritionnelles et allergènes : à compléter"
+    ],
+    "saveurs": [
+      "Chocolat & Caramel salé",
+      "Chocolat Noisette",
+      "Cookies & Cream",
+      "Vanille Amande",
+      "Fruits rouges",
+      "Chocolat blanc Coco"
+    ],
+    "couleurs": [],
+    "tailles": [
+      "55 g"
+    ],
+    "aCompleter": true,
+    "nouveaute": false
+  },
+  {
+    "id": "built-to-perform",
+    "slug": "vizrok-built-to-perform",
+    "nom": "Vizrok - Built to Perform.",
+    "court": "Built to Perform",
+    "categorie": "nutrition",
+    "prix": 50.91,
+    "description": "La sélection Built to Perform : Performance Whey, Pure Creatine (créatine monohydrate) et Fuel Cookies.",
+    "details": [
+      "Contenu exact livré pour ce prix : à compléter",
+      "Composition, valeurs nutritionnelles et allergènes : à compléter"
+    ],
+    "couleurs": [],
+    "tailles": [
+      "Contenu à compléter"
+    ],
+    "aCompleter": true,
+    "nouveaute": false
+  },
+  {
+    "id": "whey",
+    "slug": "vizrok-whey-protein",
+    "nom": "Vizrok WHEY PROTEIN",
+    "court": "Whey Protein",
+    "categorie": "nutrition",
+    "prix": 27.27,
+    "description": "Protéine en poudre de la nouvelle collection Vizrok Nutrition.",
+    "details": [
+      "Goût, poids net et nombre de doses : à compléter",
+      "Composition, valeurs nutritionnelles et allergènes : à compléter"
+    ],
+    "couleurs": [],
+    "tailles": [
+      "Poids à compléter"
+    ],
+    "aCompleter": true,
+    "nouveaute": false
+  }
+]

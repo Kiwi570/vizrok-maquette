@@ -1,0 +1,17 @@
+{
+  "nom": "Vizrok.store",
+  "adresse": "https://vizrok-maquette.vercel.app",
+  "siteActuel": "vizrok-store-shop.fourthwall.com",
+  "version": 2,
+  "langues": ["fr"],
+  "navigation": ["accueil", "boutique", "seance", "nutrition", "livraison", "contact"],
+  "actionEntete": { "page": "boutique" },
+  "couleurs": { "fond": "#050B14", "texte": "#EAF2F5", "voile": "#0A1422", "ouverture": "#050B14", "menu": "#050B14", "theme": "#050B14" },
+  "reseaux": [
+    { "nom": "Instagram", "compte": "@Vizrok6", "url": "https://instagram.com/Vizrok6" },
+    { "nom": "TikTok", "compte": "@vizrok.off", "url": "https://tiktok.com/@vizrok.off" }
+  ],
+  "polices": ["/assets/fonts/titres-900.woff2", "/assets/fonts/texte-400.woff2"],
+  "imagePartage": "grok/accueil-ouverture-1280.webp",
+  "curseur": true
+}

@@ -1,0 +1,758 @@
+{
+ "maillot": [
+  {
+   "n": 1,
+   "source": "vizrok-store-maillot-sport.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 2,
+   "source": "vizrok-store-maillot-sport-3.jpg",
+   "fond": "#E4E4E4",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 3,
+   "source": "vizrok-store-maillot-sport-2.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 4,
+   "source": "vizrok-store-maillot-sport-5.jpg",
+   "fond": "#E4E4E4",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 5,
+   "source": "vizrok-store-maillot-sport-7.jpg",
+   "fond": "#E4E4E4",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "tshirt": [
+  {
+   "n": 1,
+   "source": "t-shirt-vizrok-comfort.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 2,
+   "source": "t-shirt-vizrok-comfort-2.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 3,
+   "source": "t-shirt-vizrok-comfort-6.jpg",
+   "fond": "#E6E6E7",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 4,
+   "source": "t-shirt-vizrok-comfort-5.jpg",
+   "fond": "#E4E4E4",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 5,
+   "source": "t-shirt-vizrok-comfort-8.jpg",
+   "fond": "#E5E5E5",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "pantalon": [
+  {
+   "n": 1,
+   "source": "pantalon-vizrok-comfort-colors.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "hoodie-lane-seven": [
+  {
+   "n": 1,
+   "source": "vizrok-lane-seven-hoodie.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 2,
+   "source": "vizrok-lane-seven-hoodie-2.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 3,
+   "source": "vizrok-lane-seven-hoodie-7.jpg",
+   "fond": "#E3E3E3",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 4,
+   "source": "vizrok-lane-seven-hoodie-5.jpg",
+   "fond": "#E4E4E4",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 5,
+   "source": "vizrok-lane-seven-hoodie-4.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "hoodie-cotton-heritage": [
+  {
+   "n": 1,
+   "source": "vizrok-cotton-heritage-hoodie.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 2,
+   "source": "vizrok-cotton-heritage-hoodie-2.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 3,
+   "source": "vizrok-cotton-heritage-hoodie-5.jpg",
+   "fond": "#E5E5E5",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 4,
+   "source": "vizrok-cotton-heritage-hoodie-6.jpg",
+   "fond": "#E3E3E4",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 5,
+   "source": "vizrok-cotton-heritage-hoodie-7.jpg",
+   "fond": "#E4E4E4",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "pull-cotton-heritage": [
+  {
+   "n": 1,
+   "source": "pull-vizrok-cotton-heritage.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 2,
+   "source": "pull-vizrok-cotton-heritage-2.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 3,
+   "source": "pull-vizrok-cotton-heritage-5.jpg",
+   "fond": "#E4E4E4",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 4,
+   "source": "pull-vizrok-cotton-heritage-6.jpg",
+   "fond": "#E5E5E5",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 5,
+   "source": "pull-vizrok-cotton-heritage-8.jpg",
+   "fond": "#E5E5E5",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "pull-stanley-stella": [
+  {
+   "n": 1,
+   "source": "pull-vizrok-stanley-stella.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 2,
+   "source": "pull-vizrok-stanley-stella-2.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 3,
+   "source": "pull-vizrok-stanley-stella-5.jpg",
+   "fond": "#E5E5E5",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 4,
+   "source": "pull-vizrok-stanley-stella-6.jpg",
+   "fond": "#E5E5E5",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 5,
+   "source": "pull-vizrok-stanley-stella-8.jpg",
+   "fond": "#E4E4E4",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "bob": [
+  {
+   "n": 1,
+   "source": "vizrok-big-accessories-bucket-2.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 2,
+   "source": "vizrok-big-accessories-bucket-3.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 3,
+   "source": "vizrok-big-accessories-bucket-5.jpg",
+   "fond": "#8E8182",
+   "affichage": "plein",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 4,
+   "source": "vizrok-big-accessories-bucket-6.jpg",
+   "fond": "#C3BCBA",
+   "affichage": "plein",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 5,
+   "source": "vizrok-big-accessories-bucket-7.jpg",
+   "fond": "#E0DEDD",
+   "affichage": "plein",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "casquette": [
+  {
+   "n": 1,
+   "source": "vizrok-casquette-otto-cap.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 2,
+   "source": "vizrok-casquette-otto-cap-3.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 3,
+   "source": "vizrok-casquette-otto-cap-2.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 4,
+   "source": "vizrok-casquette-otto-cap-5.jpg",
+   "fond": "#EDCFC6",
+   "affichage": "plein",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 5,
+   "source": "vizrok-casquette-otto-cap-7.jpg",
+   "fond": "#E5DCD9",
+   "affichage": "plein",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "gourde": [
+  {
+   "n": 1,
+   "source": "vizrok-stainless-steel-water-3.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 2,
+   "source": "vizrok-stainless-steel-water.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 3,
+   "source": "vizrok-stainless-steel-water-4.jpg",
+   "fond": "#706E6E",
+   "affichage": "plein",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 4,
+   "source": "vizrok-stainless-steel-water-5.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "verre-shaker": [
+  {
+   "n": 1,
+   "source": "vizrok-shaker-pint-glass-3.jpg",
+   "fond": "#F9F9F9",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 2,
+   "source": "vizrok-shaker-pint-glass.jpg",
+   "fond": "#F6F6F6",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 3,
+   "source": "vizrok-shaker-pint-glass-4.jpg",
+   "fond": "#F9F9F9",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "verre-canette": [
+  {
+   "n": 1,
+   "source": "vizrok-store-verre-forme.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 2,
+   "source": "vizrok-store-verre-forme-5.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 3,
+   "source": "vizrok-store-verre-forme-2.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 4,
+   "source": "vizrok-store-verre-forme-3.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "poster": [
+  {
+   "n": 1,
+   "source": "poster-vizrok-paysage-product.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 2,
+   "source": "poster-vizrok-paysage-product-6.jpg",
+   "fond": "#000000",
+   "affichage": "contenu",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  },
+  {
+   "n": 3,
+   "source": "poster-vizrok-paysage-product-11.jpg",
+   "fond": "#EEECEC",
+   "affichage": "plein",
+   "ratio": 0.75,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "nutrimax": [
+  {
+   "n": 1,
+   "source": "nutrimax-product-image-1.jpg",
+   "fond": "#CBB2A3",
+   "affichage": "plein",
+   "ratio": 1.5,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "energy": [
+  {
+   "n": 1,
+   "source": "vizrok-energy-product-image.jpg",
+   "fond": "#4C4E41",
+   "affichage": "plein",
+   "ratio": 1.5,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "barre": [
+  {
+   "n": 1,
+   "source": "vizrok-nutrition-barre-chocolat.jpg",
+   "fond": "#F6D7A9",
+   "affichage": "plein",
+   "ratio": 1.5,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "built-to-perform": [
+  {
+   "n": 1,
+   "source": "vizrok-built-perform-product.jpg",
+   "fond": "#1D1C1C",
+   "affichage": "plein",
+   "ratio": 1.5,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ],
+ "whey": [
+  {
+   "n": 1,
+   "source": "vizrok-whey-protein-product.jpg",
+   "fond": "#554F4F",
+   "affichage": "plein",
+   "ratio": 1.2067,
+   "largeurs": [
+    480,
+    800,
+    1200
+   ]
+  }
+ ]
+}

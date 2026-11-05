@@ -1,0 +1,399 @@
+{
+  "pages": {
+    "accueil": {
+      "nav": "Accueil",
+      "titre": "Vizrok.store — Built to Perform.",
+      "description": "Boutique officielle Vizrok : vêtements, accessoires et gamme Vizrok Nutrition, fabriqués à la demande, livraison internationale.",
+      "accroche": "Plus fort. Plus loin. Plus lourd.",
+      "partageAlt": "Salle de musculation de nuit et barre au sol, aux couleurs de Vizrok.store"
+    },
+    "boutique": {
+      "nav": "Boutique",
+      "titre": "Boutique — Vizrok.store",
+      "description": "Les 18 pièces Vizrok : vêtements, accessoires, nutrition et poster. Filtres, recherche et panier.",
+      "accroche": "18 pièces. Une seule barre.",
+      "partageAlt": "Portant noir vide sous un projecteur, boutique Vizrok.store"
+    },
+    "seance": {
+      "nav": "Ta séance",
+      "titre": "Ta séance — Vizrok.store",
+      "description": "Le maillot de sport Vizrok en trois coloris, son guide des tailles en centimètres et le kit de séance à composer.",
+      "accroche": "Équipe ta séance.",
+      "partageAlt": "Coin d'entraînement avec banc et rack, Vizrok.store"
+    },
+    "nutrition": {
+      "nav": "Nutrition",
+      "titre": "Vizrok Nutrition — Vizrok.store",
+      "description": "La gamme Vizrok Nutrition : whey, barre protéinée, boisson énergisante et sélections, avec les informations à compléter.",
+      "accroche": "Fuel your performance.",
+      "partageAlt": "Surface sombre et gouttes d'eau, gamme Vizrok Nutrition"
+    },
+    "livraison": {
+      "nav": "Livraison & retours",
+      "titre": "Livraison et retours — Vizrok.store",
+      "description": "Fabrication à la demande, défauts remplacés ou remboursés, rétractation de 14 jours dans l'Union européenne, moyens de paiement et douanes.",
+      "accroche": "Fabriqué à la demande. Qualité garantie.",
+      "partageAlt": "Colis en carton empilés dans la pénombre, Vizrok.store"
+    },
+    "contact": {
+      "nav": "Contact",
+      "titre": "Contact — Vizrok.store",
+      "description": "Une question sur une commande, un défaut, une rétractation ou une collaboration : écrivez à Vizrok.store.",
+      "accroche": "Écris-nous.",
+      "partageAlt": "Rangée de casiers et lueur verte, contact Vizrok.store"
+    },
+    "404": {
+      "nav": "Page introuvable",
+      "titre": "Page introuvable — Vizrok.store",
+      "description": "Cette page n'existe pas ou plus.",
+      "accroche": "Cette page a quitté la barre.",
+      "partageAlt": "Disque de fonte seul sur le sol"
+    }
+  },
+  "commun": {
+    "navigation": "Navigation principale",
+    "menu": "Menu",
+    "fermer": "Fermer",
+    "evitement": "Aller au contenu",
+    "mentionIa": "Illustration générée",
+    "pause": "Pause",
+    "lecture": "Lecture",
+    "calmeReduire": "Réduire les animations",
+    "calmeRetablir": "Rétablir les animations",
+    "calmeSysteme": "Animations réduites par votre appareil",
+    "sommaire": "Sommaire",
+    "confort": "Confort",
+    "retourHaut": "Retour en haut",
+    "piedTexte": "Boutique officielle de la marque Vizrok.",
+    "legal": "Mentions légales · Politique de confidentialité : à compléter",
+    "maquette": "Maquette : prix hors taxes comme sur la boutique actuelle (prix TTC à compléter), fiches nutrition à compléter, panier et formulaires simulés.",
+    "barreBoutique": "Boutique",
+    "ht": "HT",
+    "ttc": "TTC à compléter",
+    "ajouter": "Ajouter",
+    "voir": "Voir la fiche",
+    "aCompleter": "à compléter",
+    "choisir": "Choisir",
+    "ficheACompleter": "Fiche à compléter"
+  },
+  "intro": {
+    "mot1": "Plus fort.",
+    "mot2": "Plus loin.",
+    "mot3": "Plus lourd.",
+    "pieces": "Pièces"
+  },
+  "panier": {
+    "bouton": "Panier",
+    "titre": "Ton panier",
+    "fermer": "Fermer le panier",
+    "vide": "Ton panier est vide. Choisis une pièce dans la boutique.",
+    "total": "Total HT",
+    "note": "Prix hors taxes de la boutique actuelle ; TVA, livraison et droits éventuels calculés à la commande. Prix TTC à compléter.",
+    "paiementsLibelle": "Moyens de paiement acceptés",
+    "commander": "Commander",
+    "simule": "Commande simulée : rien n'a été payé ni envoyé. Sur le site final, le paiement passera par la boutique officielle.",
+    "retirer": "Retirer",
+    "moins": "Une de moins",
+    "plus": "Une de plus",
+    "ajoute": "ajouté au panier",
+    "quantite": "Quantité"
+  },
+  "accueil": {
+    "hero": {
+      "surtitre": "Vizrok.store · nouvelle collection",
+      "titre": "Built to Perform.",
+      "texte": "Vêtements, accessoires et nutrition de la marque Vizrok, fabriqués à la demande pour la salle et pour la rue.",
+      "action": "Voir la boutique",
+      "info": "18 pièces · fabriquées à la demande · livraison internationale",
+      "alt": "Salle de musculation vide la nuit, une barre posée au sol sous un projecteur"
+    },
+    "ruban": "Built to Perform · Fuel your performance · Plus fort. Plus loin. Plus lourd. · Nouvelle collection. Nouveau niveau. ·",
+    "manifeste": {
+      "surtitre": "Le manifeste",
+      "texte": "Performance. Muscle. Energy. Lifestyle.",
+      "suite": "Parce que la différence ne se fait pas dans les paroles… elle se fait à la salle.",
+      "signature": "Vizrok — Built to Perform."
+    },
+    "collections": {
+      "surtitre": "Charge ta barre",
+      "titre": "Quatre disques, dix-huit pièces.",
+      "texte": "Chaque disque chargé ouvre une collection.",
+      "vetements": "Vêtements",
+      "accessoires": "Accessoires",
+      "nutrition": "Nutrition",
+      "deco": "Déco",
+      "pieces": "pièces",
+      "piece": "pièce",
+      "des": "dès",
+      "voir": "Voir la collection",
+      "vetementsTexte": "Maillot mesh, t-shirt, pantalon, hoodies et pulls.",
+      "accessoiresTexte": "Bob, casquette, gourde inox et deux verres.",
+      "nutritionTexte": "Whey, barre protéinée, boisson et sélections.",
+      "decoTexte": "Le poster Vizrok au format paysage."
+    },
+    "maillot": {
+      "surtitre": "La pièce phare",
+      "titre": "Le maillot mesh.",
+      "texte": "Maillot de sport unisexe léger en mesh polyester respirant, imprimé au visuel Vizrok. Trois coloris, du S au 2XL.",
+      "couleur": "Coloris",
+      "action": "Choisir ma taille",
+      "detail": "Voir le maillot en détail",
+      "apercu": "Photo : coloris Blanc. Autres coloris : aperçu de la teinte."
+    },
+    "nouveautes": {
+      "surtitre": "Sélection",
+      "titre": "La sélection.",
+      "texte": "Quelques pièces de la boutique, à faire défiler.",
+      "region": "Galerie de la sélection"
+    },
+    "nutrition": {
+      "surtitre": "Vizrok Nutrition",
+      "titre": "La gamme Vizrok Nutrition.",
+      "texte": "Whey, barre protéinée, boisson énergisante et sélections : cinq produits dans la boutique.",
+      "action": "Voir la gamme"
+    },
+    "garanties": {
+      "surtitre": "Fabriqué pour toi",
+      "titre": "Fabriqué quand tu commandes.",
+      "g1": "Fabriqué à la demande",
+      "g1t": "Chaque pièce est produite après ta commande.",
+      "g2": "jours pour signaler un défaut",
+      "g2t": "Défaut d'impression ou de qualité : remplacé ou remboursé.",
+      "g3": "jours de rétractation",
+      "g3t": "Dans l'Union européenne, l'EEE et au Royaume-Uni, hors articles personnalisés.",
+      "g4": "Paiement",
+      "g4t": "Carte bancaire, PayPal, Google Pay, Apple Pay ; Klarna selon le pays.",
+      "action": "Livraison et retours",
+      "alt": "Colis en carton posé sur un sol de salle"
+    },
+    "reseaux": {
+      "surtitre": "Suis la marque",
+      "titre": "La salle continue sur les réseaux.",
+      "alt": "Silhouette de dos au fond d'une salle éclairée en vert"
+    },
+    "fin": {
+      "titre": "Nouvelle collection. Nouveau niveau.",
+      "texte": "Vêtements, accessoires et nutrition : toute la boutique en un clic.",
+      "action": "Entrer dans la boutique",
+      "seance": "Composer ma séance"
+    }
+  },
+  "boutique": {
+    "surtitre": "Boutique officielle",
+    "titre": "Boutique",
+    "texte": "Toutes les pièces Vizrok. Filtre, cherche, ajoute au panier.",
+    "filtres": "Collections",
+    "tout": "Tout",
+    "recherche": "Chercher une pièce",
+    "rechercheAide": "Exemple : hoodie, gourde, whey",
+    "tri": "Trier",
+    "triDefaut": "Nouveautés d'abord",
+    "triPrix": "Prix croissant",
+    "triPrixDesc": "Prix décroissant",
+    "resultats": "pièces affichées",
+    "aucun": "Aucune pièce ne correspond. Essaie un autre mot ou une autre collection.",
+    "effacer": "Tout afficher",
+    "fermerFiche": "Fermer la fiche",
+    "couleur": "Couleur",
+    "taille": "Taille",
+    "choisirTaille": "Choisis une taille.",
+    "ajouterPanier": "Ajouter au panier",
+    "ajoute": "Ajouté au panier",
+    "nutritionNote": "Composition, valeurs nutritionnelles, allergènes et mentions obligatoires : à compléter par le fabricant.",
+    "rayon": {
+      "titre": "Il manque une pièce à ton kit ?",
+      "texte": "Compose ta séance : maillot, gourde, verre et casquette, total en direct.",
+      "action": "Composer ma séance",
+      "alt": "Portant noir vide avec des cintres en acier"
+    },
+    "photoColoris": "Photos : coloris {coloris}.",
+    "vue": "Vue"
+  },
+  "seance": {
+    "surtitre": "Ta séance",
+    "titre": "Ta séance",
+    "texte": "Le maillot de sport Vizrok, son guide des tailles et le kit à composer avant d'entrer dans la salle.",
+    "action": "Composer mon kit",
+    "info": "Maillot dès 22,73 € HT · S à 2XL",
+    "chrono": "Chrono de salle · temps sur la page",
+    "alt": "Coin d'entraînement vide avec banc et rack sous un projecteur",
+    "eclate": {
+      "surtitre": "Le maillot, pièce par pièce",
+      "titre": "Léger, respirant, coupé pour bouger.",
+      "p1": "Mesh 100 % polyester",
+      "p1t": "Respirant, tissu léger de 4,13 oz.",
+      "p2": "Manches raglan courtes",
+      "p2t": "Coupe ample et longueur allongée.",
+      "p3": "Col rond bordé",
+      "p3t": "Encolure classique, finition bordée.",
+      "p4": "Coutures latérales",
+      "p4t": "Construction cousue sur les côtés.",
+      "p5": "Étiquette détachable",
+      "p5t": "Rien ne gratte dans la nuque.",
+      "couleurs": "Blanc, jaune néon ou orange néon."
+    },
+    "tailles": {
+      "surtitre": "Guide des tailles",
+      "titre": "Mesure, puis choisis.",
+      "texte": "Mesures du fournisseur en centimètres. Écart possible jusqu'à 5 cm.",
+      "taille": "Taille",
+      "longueur": "Longueur",
+      "largeur": "Largeur",
+      "confirmer": "à confirmer",
+      "a": "A : longueur, du haut de l'épaule au bas du maillot.",
+      "b": "B : largeur, d'une couture d'aisselle à l'autre."
+    },
+    "kit": {
+      "surtitre": "Le kit au vestiaire",
+      "titre": "Accroche ton kit.",
+      "texte": "Choisis tes pièces : chacune prend son crochet, le total suit.",
+      "maillot": "Maillot",
+      "gourde": "Gourde",
+      "verre": "Verre",
+      "tete": "Sur la tête",
+      "aucun": "Sans",
+      "total": "Total du kit HT",
+      "ajouter": "Ajouter le kit au panier",
+      "ajoute": "Kit ajouté au panier",
+      "detail": "Détail du kit",
+      "note": "Prix hors taxes de la boutique actuelle. Prix TTC à compléter.",
+      "alt": "Mur de vestiaire avec une rangée de crochets vides au-dessus d'un banc"
+    },
+    "accessoires": {
+      "surtitre": "Dans le sac",
+      "titre": "Les accessoires.",
+      "texte": "Cinq pièces pour la salle et pour la rue.",
+      "alt": "Gros plan sur le moletage d'une barre en acier"
+    },
+    "fin": {
+      "titre": "Prêt pour la séance ?",
+      "action": "Voir toute la boutique"
+    }
+  },
+  "nutrition": {
+    "surtitre": "Vizrok Nutrition",
+    "titre": "Vizrok Nutrition.",
+    "texte": "Whey, barre protéinée, boisson énergisante et sélections : la gamme nutrition de la marque Vizrok.",
+    "action": "Voir la gamme",
+    "info": "5 produits · dès 12,73 € HT",
+    "etiquette": "Étiquette nutritionnelle à compléter",
+    "pour": "pour 100 g",
+    "alt": "Plan de travail en ardoise avec quelques gouttes d'eau",
+    "gamme": {
+      "surtitre": "La gamme",
+      "titre": "Cinq produits, un shaker.",
+      "texte": "Le shaker se remplit à chaque produit."
+    },
+    "saveurs": {
+      "surtitre": "La barre protéinée",
+      "titre": "Six saveurs.",
+      "texte": "Barre de 55 g à 25 % de protéines, sans huile de palme."
+    },
+    "mentions": {
+      "surtitre": "Fiches produits",
+      "titre": "Fiches complètes à venir.",
+      "texte": "Composition, allergènes, valeurs nutritionnelles, mode d'emploi et mentions obligatoires de chaque produit : à compléter."
+    },
+    "fin": {
+      "titre": "Prépare ton shaker.",
+      "texte": "Le verre shaker de 473 ml est dans la boutique.",
+      "action": "Voir le verre shaker",
+      "boutique": "Toute la nutrition"
+    },
+    "etiquetteTitre": "Valeurs nutritionnelles"
+  },
+  "livraison": {
+    "surtitre": "Livraison et retours",
+    "titre": "Qualité garantie.",
+    "texte": "Chaque pièce est fabriquée à la demande. Un défaut ? Elle est remplacée ou remboursée.",
+    "action": "Lire les questions",
+    "info": "30 jours pour signaler un défaut · 14 jours de rétractation dans l'UE",
+    "bordereau": "Bordereau",
+    "tampon": "Garanti 2 ans",
+    "expediteur": "Expéditeur",
+    "expediteurNom": "Vizrok.store via Fourthwall",
+    "destinataire": "Destinataire",
+    "destinataireNom": "Toi, en France ou à l'international",
+    "contenu": "Contenu",
+    "contenuNom": "Fabriqué à la demande",
+    "alt": "Colis en carton empilés sur une étagère en acier, dans la pénombre",
+    "etapes": {
+      "surtitre": "Le trajet d'une commande",
+      "titre": "De la commande à ta porte.",
+      "e1": "Commande",
+      "e1t": "Tu reçois un e-mail de confirmation.",
+      "e2": "Modification possible",
+      "e2t": "Un lien dans l'e-mail permet de modifier ou d'annuler, tant que la commande n'est pas en fabrication.",
+      "e3": "Fabrication",
+      "e3t": "La pièce est produite pour toi.",
+      "e4": "Livraison",
+      "e4t": "Commandes internationales : droits et taxes d'import possibles, annoncés au paiement.",
+      "e5": "30 jours",
+      "e5t": "Pour signaler un défaut d'impression ou de qualité, photo à l'appui."
+    },
+    "colis": {
+      "alt": "Mains qui ferment un colis en carton sur un établi"
+    },
+    "remboursements": {
+      "surtitre": "Remboursements",
+      "titre": "Remboursements et droits.",
+      "paypal": "heures ouvrées sur PayPal",
+      "carte": "jours ouvrés sur une carte bancaire, selon la banque",
+      "retractation": "jours pour se rétracter dans l'UE, l'EEE et au Royaume-Uni",
+      "retractationTexte": "Retour à tes frais à l'adresse indiquée ; remboursement du prix et de la livraison standard sous 14 jours. Articles personnalisés exclus.",
+      "garantie": "ans de garantie dans l'EEE et au Royaume-Uni",
+      "carteChiffre": "7 à 10"
+    },
+    "paiements": {
+      "surtitre": "Paiement",
+      "titre": "Paie comme tu veux."
+    },
+    "faq": {
+      "surtitre": "Questions fréquentes",
+      "titre": "Les questions qu'on nous pose."
+    },
+    "fin": {
+      "titre": "Une autre question ?",
+      "action": "Écrire à Vizrok"
+    }
+  },
+  "contact": {
+    "surtitre": "Contact",
+    "titre": "Écris-nous.",
+    "texte": "Une question sur une commande, un défaut, une rétractation ou une collaboration : choisis le sujet, on s'occupe du reste.",
+    "info": "Réponse par e-mail · formulaire simulé dans la maquette",
+    "alt": "Rangée de casiers sombres, une porte entrouverte d'où sort une lueur verte",
+    "etape": "Étape",
+    "sur": "sur",
+    "q1": "C'est à quel sujet ?",
+    "sujets": {
+      "commande": "Ma commande",
+      "defaut": "Un défaut",
+      "retractation": "Rétractation",
+      "collaboration": "Collaboration",
+      "autre": "Autre chose"
+    },
+    "q2": "Tes coordonnées",
+    "nom": "Nom",
+    "email": "E-mail",
+    "commandeNum": "Numéro de commande (si tu en as un)",
+    "message": "Ton message",
+    "q3": "Vérifie avant d'envoyer",
+    "modifier": "Modifier",
+    "precedent": "Retour",
+    "suivant": "Continuer",
+    "envoyer": "Envoyer",
+    "donnees": "Tes données servent uniquement à te répondre. Politique de confidentialité : à compléter.",
+    "envoye": "Message simulé : rien n'a été envoyé. Sur le site final, il partira vers Vizrok.store.",
+    "defautAide": "Pour un défaut, joins sur le site final une photo nette sur une surface plane, avec l'étiquette visible.",
+    "reseaux": "Ou sur les réseaux",
+    "ecrire": "Choisir le sujet"
+  },
+  "introuvable": {
+    "titre": "Cette page a quitté la barre.",
+    "texte": "Le lien est peut-être ancien. La boutique, elle, est toujours chargée.",
+    "retour": "Revenir à l'accueil",
+    "boutique": "Voir la boutique",
+    "alt": "Un disque de fonte seul sur le sol d'une salle vide"
+  }
+}

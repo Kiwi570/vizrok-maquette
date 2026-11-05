@@ -1,0 +1,8 @@
+[
+  { "q": { "fr": "Puis-je modifier ou annuler ma commande ?" }, "r": { "fr": "Oui, avec le lien de l'e-mail de confirmation, pendant un court moment après la commande, tant qu'elle n'est pas partie en fabrication." } },
+  { "q": { "fr": "Que faire si un article arrive avec un défaut ?" }, "r": { "fr": "Vous avez 30 jours après réception pour le signaler par le formulaire de contact, avec une photo nette du défaut sur une surface plane et votre numéro de commande. L'article est remplacé ou remboursé." } },
+  { "q": { "fr": "Puis-je retourner un article qui ne me va pas ?" }, "r": { "fr": "Les articles étant fabriqués à la demande, les retours pour la taille ne sont pas acceptés, sauf droits légaux. Dans l'Union européenne, l'Espace économique européen et au Royaume-Uni, le droit de rétractation de 14 jours s'applique aux articles non personnalisés." } },
+  { "q": { "fr": "Quand suis-je remboursé ?" }, "r": { "fr": "Sous 24 heures ouvrées sur PayPal, sous 7 à 10 jours ouvrés sur une carte bancaire, selon votre banque." } },
+  { "q": { "fr": "Y a-t-il des frais de douane ?" }, "r": { "fr": "Une commande internationale peut être soumise à des droits et taxes d'import. Selon le pays, ils sont perçus au paiement ou annoncés par un avis au moment de commander." } },
+  { "q": { "fr": "Qui gère ma commande ?" }, "r": { "fr": "Les commandes sont gérées par Fourthwall, vendeur officiel et partenaire de fabrication de la boutique, qui traite les questions de commande et les retours." } }
+]

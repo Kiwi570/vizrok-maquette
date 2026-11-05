@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "OnlineStore",
+  "name": "Vizrok.store",
+  "url": "https://vizrok-maquette.vercel.app/",
+  "description": { "fr": "Boutique officielle Vizrok : vêtements, accessoires et gamme Vizrok Nutrition, fabriqués à la demande." },
+  "slogan": "Built to Perform.",
+  "sameAs": ["https://instagram.com/Vizrok6", "https://tiktok.com/@vizrok.off"],
+  "paymentAccepted": "Carte bancaire, PayPal, Google Pay, Apple Pay"
+}
