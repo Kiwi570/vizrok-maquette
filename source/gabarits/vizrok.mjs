@@ -84,20 +84,35 @@ export function visuelProduit(c, p, { vue = 0, classe = '', sizes = '(max-width:
   const v = vues(p.id);
   if (!v.length) return html`<figure class="media media--produit ${classe}"${brut(attrs ? ' ' + attrs : '')}>${visuelCode(p, vue)}</figure>`;
   const i = Math.min(vue, v.length - 1), info = infoVue(p.id, i);
-  return c.media({ nom: v[i], alt: p.nom, classe: `media--produit${info.affichage === 'plein' ? ' media--plein' : ''}${teinte ? ' media--teinte' : ''} ${classe}`, sizes, priorite, attrs,
+  return c.media({ nom: v[i], alt: p.nom, classe: `media--produit${info.affichage === 'plein' ? ' media--plein' : ''}${clair(info.fond) ? ' media--clair' : ''}${teinte ? ' media--teinte' : ''} ${classe}`, sizes, priorite, attrs,
     style: `--plaque:${info.fond}` + (teinte ? `;--teinte:${teinte}` : '') });
+}
+
+/* Fond clair (verre shaker, photos portées) : plaque claire assumée, cadrée comme une boîte à lumière. */
+const clair = (hex) => /^#[0-9A-F]{6}$/i.test(hex) && [1, 3, 5].reduce((s, k) => s + parseInt(hex.slice(k, k + 2), 16), 0) / 3 > 200;
+
+/* Vue montrée au survol d'une fiche : la première dont le fond change (photo portée, détail), sinon la deuxième. */
+export function vueAlternative(p) {
+  const v = vues(p.id);
+  if (v.length < 2) return null;
+  const f0 = infoVue(p.id, 0).fond;
+  let i = v.findIndex((_, k) => k > 0 && infoVue(p.id, k).fond !== f0);
+  if (i < 0) i = 1;
+  const info = infoVue(p.id, i);
+  return { src: `/assets/images/${v[i]}`, fond: info.fond, plein: info.affichage === 'plein' };
 }
 
 /* Fiche produit de la boutique et des galeries : le prix est visible au recto. */
 export function carteProduit(c, p, { classe = '', niveau = 3, sizes } = {}) {
-  const H = `h${niveau}`;
+  const H = `h${niveau}`, alt = vueAlternative(p);
   return html`<article class="fiche ${classe}" data-produit="${p.id}" data-categorie="${p.categorie}" data-prix-valeur="${p.prix}" data-nom="${p.nom} ${p.court} ${p.description}">
-  <a class="fiche-lien" href="${c.url('boutique', '', 'produit=' + p.id)}" data-produit-ouvrir="${p.id}" data-libelle="${c.libelle('boutique')}">
+  <a class="fiche-lien" href="${c.url('boutique', '', 'produit=' + p.id)}" data-produit-ouvrir="${p.id}" data-libelle="${c.libelle('boutique')}"${alt ? brut(` data-vue-alt="${alt.src}" data-vue-alt-fond="${alt.fond}"${alt.plein ? ' data-vue-alt-plein' : ''}`) : ''}>
     ${visuelProduit(c, p, { classe: 'fiche-media', sizes })}
     <${brut(H)} class="fiche-nom">${p.court}</${brut(H)}>
   </a>
   <p class="fiche-ligne"><span class="fiche-prix" data-prix>${prix(p.prix)} <small>${c.t('commun.ht')}</small></span>${p.couleurs.length ? html`<span class="fiche-couleurs" role="img" aria-label="${p.couleurs.map((x) => x.nom).join(', ')}">${p.couleurs.map((x) => html`<i style="--c:${x.hex}"></i>`)}</span>` : ''}</p>
   ${p.aCompleter ? html`<p class="fiche-note"><span>${c.t('commun.ficheACompleter')}</span></p>` : ''}
+  ${p.tailles.length > 1 ? html`<div class="fiche-rapide" aria-hidden="true"><p class="fr-titre">${c.t('commun.ajoutRapide')}</p><div class="fr-tailles">${p.tailles.map((t) => html`<button type="button" tabindex="-1" data-rapide="${p.id}" data-taille="${t}">${t}</button>`)}</div></div>` : ''}
   <button type="button" class="bouton bouton--petit fiche-ajouter" data-ajouter="${p.id}" aria-label="${(p.tailles.length > 1 ? c.s('commun.choisir') : c.s('commun.ajouter')) + ' : ' + p.court}">${p.tailles.length > 1 ? c.t('commun.choisir') : c.t('commun.ajouter')}</button>
 </article>`;
 }

@@ -1,8 +1,8 @@
 /* Boutique : filtres en disques, recherche sans accents ni pluriels, tri, sélection gardée dans l'adresse
    (?collection=, ?q=, ?tri=, ?produit=), fiches réordonnées en Flip (déplacées, jamais recréées), fiche en volet
    (dialog natif) avec son propre lien, couleurs, tailles et ajout au panier. Mode calme : changement direct. */
-import { etat, rafraichir, suivre, lacher } from './socle/index.js?v=2';
-import { ajouter, catalogue } from './panier.js?v=2';
+import { etat, rafraichir, suivre, lacher } from './socle/index.js?v=3';
+import { ajouter, catalogue } from './panier.js?v=3';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];

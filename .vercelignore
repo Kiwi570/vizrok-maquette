@@ -11,3 +11,4 @@ plan-images.json
 direction.json
 grok-consignes.json
 *.docx
+.env*

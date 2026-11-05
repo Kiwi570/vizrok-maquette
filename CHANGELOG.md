@@ -1,5 +1,20 @@
 # Journal des versions
 
+## v3 — 5 novembre 2026
+
+Ce qui a changé :
+
+- **Changement de page « disque »** : un disque de fonte roule jusqu'au centre, grandit et couvre l'écran avec le nom de la page ; à l'arrivée, il rétrécit puis repart en roulant (remplace le voile qui montait).
+- **Accueil, ouverture** : une barre chargée tombe sur « Built to Perform. » ; le titre s'écrase et rebondit, un nuage de magnésie s'envole des disques et l'onde de choc part de l'impact. Un clic dans l'ouverture relance la poudre (et l'onde sur ordinateur).
+- **Accueil, nouvelle section « Porté »** : quatre photos portées (hoodie, t-shirt, casquette, pull), ouvertes en volets, décalées et glissant à des vitesses différentes ; nom, prix et bouton Choisir au survol (toujours visibles au doigt).
+- **Fiches produit** (boutique, sélection, accessoires) : au survol, la vue portée balaie la photo, la fiche s'incline vers la souris avec un reflet, et les tailles s'offrent en ajout rapide ; au téléphone, un appui long ouvre l'ajout rapide.
+- **Ta séance, scanner du maillot** : la vraie photo du maillot passe sous une ligne laser ; chaque repère (étiquette, col, manches, mesh, coutures) s'allume à son passage avec un gros plan dans la loupe. Remplace le maillot dessiné en vue éclatée.
+- **Nutrition, shaker vivant** : le liquide prend la couleur du produit lu, ondule, clapote et penche selon la vitesse du défilement, des bulles remontent.
+- **Livraison, suivi de colis** : une carte où le colis suit son trajet (ton écran, modification, atelier, transporteur, chez toi) au fil des étapes, qui s'allument à son passage. Remplace la photo du colis.
+- **Contact, casier** : la poignée tourne, la porte tremble puis s'ouvre en grand, le néon du casier grésille ; à l'envoi (simulé), un ticket de vestiaire numéroté s'imprime.
+- Verre shaker présenté sur une plaque claire assumée (ses photos sont sur fond blanc).
+- Les fichiers `.env*` (jeton créé par Vercel sur ton ordinateur) sont exclus des mises en ligne.
+
 ## v2 — 5 novembre 2026
 
 Ce qui a changé :

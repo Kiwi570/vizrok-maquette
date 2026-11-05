@@ -3,10 +3,10 @@
    de démarrer couverte) ; 3. la nouvelle page se prépare sous le voile ; 4. le voile se retire.
    Les liens vers la page en cours font défiler sans recharger (chemins normalisés, cleanUrls).
    Les grands sauts dans une même page passent aussi sous le voile. */
-import { html, etat, chemin, stockage, emettre } from './etat.js?v=2';
-import { aller, bloquerDefilement, debloquerDefilement } from './defilement.js?v=2';
-import { fermerMenu } from './entete.js?v=2';
-import { suivre, lacher } from './gouttiere.js?v=2';
+import { html, etat, chemin, stockage, emettre } from './etat.js?v=3';
+import { aller, bloquerDefilement, debloquerDefilement } from './defilement.js?v=3';
+import { fermerMenu } from './entete.js?v=3';
+import { suivre, lacher } from './gouttiere.js?v=3';
 
 const prechargees = new Set();
 let enDepart = false;
@@ -18,6 +18,7 @@ function couvrir(duree = 450) {
   if (!v || etat.calme) return Promise.resolve();
   html.classList.remove('voile-leve');
   v.style.visibility = 'visible';
+  if (etat.voileAnim) return etat.voileAnim.couvrir(v, duree).catch(() => {});
   const a = v.animate([{ transform: 'translateY(100%)' }, { transform: 'translateY(0)' }],
     { duration: duree, easing: 'cubic-bezier(.65,0,.35,1)', fill: 'forwards' });
   return a.finished.catch(() => {});
@@ -26,6 +27,13 @@ function couvrir(duree = 450) {
 function decouvrir(duree = 450) {
   const v = voile();
   if (!v || etat.calme) return Promise.resolve();
+  if (etat.voileAnim) {
+    return etat.voileAnim.lever(v, duree).catch(() => {}).then(() => {
+      v.style.visibility = '';
+      html.classList.add('voile-leve');
+      etat.voileAnim.nettoyer(v);
+    });
+  }
   const a = v.animate([{ transform: 'translateY(0)' }, { transform: 'translateY(-100%)' }],
     { duration: duree, easing: 'cubic-bezier(.65,0,.35,1)', fill: 'forwards' });
   return a.finished.catch(() => {}).then(() => {
@@ -82,7 +90,7 @@ export async function partir(url, libelle) {
   bloquerDefilement('depart');
   suivre(voile());
   /* Garde-fou : la navigation part même si l'animation ne se termine pas. */
-  const secours = setTimeout(() => (location.href = url.href), 900);
+  const secours = setTimeout(() => (location.href = url.href), 1300);
   await couvrir();
   clearTimeout(secours);
   location.href = url.href;

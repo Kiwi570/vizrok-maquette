@@ -1,6 +1,6 @@
 /* Kit au vestiaire (Ta séance) et formulaire de contact en étapes. */
-import { etat, rafraichir } from './socle/index.js?v=2';
-import { ajouter, catalogue } from './panier.js?v=2';
+import { etat, rafraichir } from './socle/index.js?v=3';
+import { ajouter, catalogue } from './panier.js?v=3';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];

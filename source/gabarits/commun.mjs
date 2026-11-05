@@ -1,6 +1,9 @@
 /* Gabarit commun : head, en-tête, menu, panier en tiroir, pied de page, barre fixe du téléphone, voile, intro.
    Les conventions data-* sont celles que lisent le socle JavaScript et l'audit (voir le README du socle). */
 import { html, brut } from '../../outils/gabarit.mjs';
+
+/* Disque de la transition entre pages : il roule jusqu'au centre puis grandit jusqu'à couvrir l'écran (site.js). */
+const DISQUE_VOILE = '<svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="vd-cercle" d="M100 100m-66 0a66 66 0 1 1 132 0a66 66 0 1 1-132 0"/></defs><circle class="vd-fond" cx="100" cy="100" r="100"/><g class="vd-marques"><circle cx="100" cy="100" r="96" class="vd-bord"/><circle cx="100" cy="100" r="80" class="vd-rainure"/><text class="vd-texte"><textPath href="#vd-cercle" textLength="404" lengthAdjust="spacing">VIZROK · BUILT TO PERFORM · 20 KG ·</textPath></text><circle cx="100" cy="100" r="30" class="vd-moyeu"/><circle cx="100" cy="100" r="11" class="vd-trou"/></g></svg>';
 import { vuesDetail, dessin } from './vizrok.mjs';
 
 const navigation = (c) => c.site.navigation.filter((cle) => c.pages[cle] && (c.pages[cle].langues || c.langues).includes(c.l));
@@ -135,7 +138,7 @@ function barre(c) {
 }
 
 function voile(c) {
-  return html`<div data-voile aria-hidden="true"><div class="voile-contenu">${marque()}<span data-voile-libelle>${c.libelle(c.page.cle)}</span><span class="voile-barre"></span></div></div>`;
+  return html`<div data-voile aria-hidden="true"><div class="voile-disque">${brut(DISQUE_VOILE)}</div><div class="voile-contenu">${marque()}<span data-voile-libelle>${c.libelle(c.page.cle)}</span><span class="voile-barre"></span></div></div>`;
 }
 
 /* Panneau de l'intro : la barre chargée (accueil) ou, sur les autres pages, le même décor en plus court. */

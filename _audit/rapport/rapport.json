@@ -12,84 +12,24 @@
       "lieux": [
         "1366×768 défilement à la molette, processeur ralenti 4 fois"
       ]
-    },
-    {
-      "niveau": "regarder",
-      "controle": "effet qui dérive sous la souris immobile",
-      "detail": "léger changement (0.3 %) 1,5 à 4,5 s après l’arrêt de la souris",
-      "etape": "mouvement",
-      "page": "/nutrition",
-      "taille": "1366×768",
-      "mode": "souris",
-      "selecteur": "[data-souris] onde",
-      "lieux": [
-        "1366×768 souris"
-      ]
     }
   ],
-  "nonLances": [
-    {
-      "controle": "Safari (WebKit)",
-      "raison": "WebKit ne peut pas s’installer ici : vérification à faire dans Safari sur le Mac (liste dans le rapport)",
-      "etape": "safari"
-    }
-  ],
+  "nonLances": [],
   "oks": {
     "vercel.json": 1,
     ".vercelignore": 1,
     "robots.txt": 1,
     "numéro de version": 1,
     "langues": 1,
-    "mesures": 44,
-    "balayage": 4,
-    "films d’ouverture": 8,
-    "films de transition": 8,
-    "bords de l’écran": 5,
-    "intro accélérable et passable": 7,
-    "menu": 1,
-    "clavier": 4,
-    "liens et boutons": 4,
-    "liens profonds": 4,
-    "liens vers la page en cours": 4,
-    "changements de hauteur": 4,
-    "mode calme": 8,
-    "bouton du mode calme": 2,
-    "parcours du projet": 1,
-    "tient dans l’écran": 4,
-    "fluidité": 8,
-    "défilement selon l’appareil": 5,
-    "mouvement": 8,
-    "effets du plan": 17,
-    "souris immobile": 3,
-    "vitesse": 4,
-    "captures": 1
+    "mesures": 11,
+    "balayage": 1,
+    "fluidité": 2,
+    "défilement selon l’appareil": 5
   },
   "infos": [
-    "Numéro de version des fichiers : ?v=2",
-    "Audit standard : étapes lourdes sur /, /boutique, /nutrition, /seance.",
+    "Numéro de version des fichiers : ?v=3",
+    "Audit standard : étapes lourdes sur /.",
     "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
-    "Ouverture / (1366×768) : 2817 ms depuis le premier octet",
-    "Ouverture /boutique (1366×768) : 2606 ms depuis le premier octet",
-    "Ouverture /nutrition (1366×768) : 2662 ms depuis le premier octet",
-    "Ouverture /seance (1366×768) : 2654 ms depuis le premier octet",
-    "Ouverture / (390×844) : 2679 ms depuis le premier octet",
-    "Ouverture /boutique (390×844) : 2594 ms depuis le premier octet",
-    "Ouverture /nutrition (390×844) : 2630 ms depuis le premier octet",
-    "Ouverture /seance (390×844) : 2649 ms depuis le premier octet",
-    "Bords de l’écran : 447 images d’intro, 13 de voile et 124 de menu jugées (panneau immobile couvrant tout l’écran), barre de défilement classique de 15 px.",
-    "Tient dans l'écran /boutique : aucune section épinglée ou plein écran.",
-    "Tient dans l'écran /nutrition : aucune section épinglée ou plein écran.",
-    "Tient dans l'écran /seance : aucune section épinglée ou plein écran.",
-    "Fluidité /boutique 1366×768 (molette) : 0 % d'images lentes sur 227, tâche la plus longue 0 ms",
-    "Fluidité /nutrition 1366×768 (molette) : 1 % d'images lentes sur 277, tâche la plus longue 105 ms",
-    "Fluidité /seance 1366×768 (molette) : 0 % d'images lentes sur 346, tâche la plus longue 0 ms",
-    "Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1344, tâche la plus longue 0 ms",
-    "Fluidité /boutique 390×844 (doigt) : 0 % d'images lentes sur 1349, tâche la plus longue 0 ms",
-    "Fluidité /nutrition 390×844 (doigt) : 0 % d'images lentes sur 1349, tâche la plus longue 0 ms",
-    "Fluidité /seance 390×844 (doigt) : 0 % d'images lentes sur 1353, tâche la plus longue 0 ms",
-    "Vitesse / : 0.71 s de calcul au chargement (téléphone ralenti).",
-    "Vitesse /boutique : 0.64 s de calcul au chargement (téléphone ralenti).",
-    "Vitesse /nutrition : 0.47 s de calcul au chargement (téléphone ralenti).",
-    "Vitesse /seance : 0.53 s de calcul au chargement (téléphone ralenti)."
+    "Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1427, tâche la plus longue 0 ms"
   ]
 }

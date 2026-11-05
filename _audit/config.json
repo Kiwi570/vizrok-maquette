@@ -1,5 +1,33 @@
 {
   "siteActuel": "vizrok-store-shop.fourthwall.com",
-  "pagesTypes": ["/", "/boutique", "/seance", "/nutrition", "/livraison", "/contact"],
-  "effets": ["barre-chargee", "onde-de-choc", "ruban-vitesse", "manifeste", "disques-collections", "maillot-mesh", "neon", "disques-filtres", "chrono-led", "maillot-eclate", "vestiaire-kit", "etiquette-trace", "shaker-niveau", "bordereau-tampon", "suivi-colis", "casier-contact", "disque-404"]
+  "pagesTypes": [
+    "/",
+    "/boutique",
+    "/seance",
+    "/nutrition",
+    "/livraison",
+    "/contact"
+  ],
+  "effets": [
+    "barre-chargee",
+    "onde-de-choc",
+    "ruban-vitesse",
+    "manifeste",
+    "disques-collections",
+    "maillot-mesh",
+    "neon",
+    "disques-filtres",
+    "chrono-led",
+    "maillot-scanner",
+    "vestiaire-kit",
+    "etiquette-trace",
+    "shaker-niveau",
+    "bordereau-tampon",
+    "suivi-colis",
+    "casier-contact",
+    "disque-404",
+    "barre-tombe",
+    "porte-volets",
+    "colis-carte"
+  ]
 }

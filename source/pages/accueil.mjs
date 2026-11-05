@@ -7,6 +7,11 @@ import { CATEGORIES, prix, visuelProduit, carteProduit, disque, vues } from '../
 
 export const page = { cle: 'accueil', fichier: 'index', imagePartage: 'grok/accueil-ouverture-1280.webp' };
 
+/* Barre de l'ouverture, vue de côté : manchon, petit, moyen et grand disque (de l'extérieur vers le centre). */
+const BARRE = brut('<span class="hb-manchon"></span><span class="hb-disque hb-disque--3" style="--c:#F2F4F2"></span><span class="hb-disque hb-disque--2" style="--c:#E6FF3B"></span><span class="hb-disque" style="--c:#3DFF8A"></span>');
+/* Section « Porté » : photos portées de la boutique (produit, vue, cadrage). */
+const PORTE = [['hoodie-lane-seven', 3, '50% 30%'], ['tshirt', 3, '50% 22%'], ['casquette', 4, '50% 35%'], ['pull-stanley-stella', 5, '50% 40%']];
+
 export default (c) => {
   const P = c.donnees.produits;
   const par = (cat) => P.filter((p) => p.categorie === cat);
@@ -20,13 +25,14 @@ export default (c) => {
   </div>
   <div class="hero-texte conteneur">
     <p class="surtitre hero-sur" data-anime="gsap">${c.t('accueil.hero.surtitre')}</p>
-    <h1 class="hero-titre"><span class="ligne-masque"><span class="hero-ligne" data-anime="gsap">${c.t('accueil.hero.titre')}</span></span></h1>
+    <h1 class="hero-titre"><span class="hero-barre" aria-hidden="true" data-effet="barre-tombe"><span class="hb-tige"></span><span class="hb-cote hb-cote--g">${BARRE}</span><span class="hb-cote hb-cote--d">${BARRE}</span></span><span class="ligne-masque"><span class="hero-ligne" data-anime="gsap">${c.t('accueil.hero.titre')}</span></span></h1>
     <p class="hero-intro" data-anime="gsap">${c.t('accueil.hero.texte')}</p>
     <p class="hero-actions" data-anime="gsap">
       ${c.lien('boutique', { classe: 'bouton', texte: c.t('accueil.hero.action'), attrs: 'data-action-principale data-survol="magnetique"' })}
       <span class="hero-info" data-info-cle>${c.t('accueil.hero.info')}</span>
     </p>
   </div>
+  <canvas class="hero-magnesie" aria-hidden="true" data-audit-ignorer></canvas>
 </section>
 
 <div class="ruban-section" data-section data-sans-visuel data-effet="ruban-vitesse">
@@ -42,6 +48,27 @@ export default (c) => {
     <p class="manifeste-suite" data-anime="mots">${c.t('accueil.manifeste.suite')}</p>
     <p class="manifeste-signature">${c.t('accueil.manifeste.signature')}</p>
   </div>
+</section>
+
+<section class="porte" id="porte" data-effet="porte-volets">
+  <div class="conteneur porte-tete">
+    <p class="surtitre">${c.t('accueil.porte.surtitre')}</p>
+    <h2 data-anime="lignes">${c.t('accueil.porte.titre')}</h2>
+    <p>${c.t('accueil.porte.texte')}</p>
+  </div>
+  <ul class="porte-grille" role="list" aria-label="${c.s('accueil.porte.region')}">
+    ${PORTE.map(([id, vue, cadrage], i) => { const p = P.find((x) => x.id === id); return html`<li class="porte-item porte-item--${i + 1}" data-porte-vitesse="${[-6, 8, -12, 5][i]}">
+      <figure class="porte-cadre">
+        ${c.media({ nom: `produits/${id}-${vue}`, alt: c.s('accueil.porte.alt', { piece: p.court }), cadrage, classe: 'porte-media', sizes: '(max-width: 760px) 80vw, 26vw' })}
+        <span class="porte-volets" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      </figure>
+      <div class="porte-etiquette">
+        <p class="porte-nom">${p.court}</p>
+        <p class="porte-prix" data-prix>${prix(p.prix)} <small>${c.t('commun.ht')}</small></p>
+        <button type="button" class="bouton bouton--petit" data-ajouter="${p.id}" aria-label="${c.s('commun.choisir') + ' : ' + p.court}">${c.t('commun.choisir')}</button>
+      </div>
+    </li>`; })}
+  </ul>
 </section>
 
 <section class="collections" id="collections">

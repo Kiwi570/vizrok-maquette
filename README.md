@@ -1,18 +1,20 @@
-# Vizrok.store — maquette v1
+# Vizrok.store — maquette v3
 
 Maquette de la boutique Vizrok.store, direction « Salle de nuit » : bleu nuit #050B14, vert néon de la marque, jaune et orange néon des maillots.
 Site statique (HTML, CSS, JavaScript), généré depuis `donnees/` par `node outils/generer.mjs`, prêt pour Vercel (cleanUrls).
 
 ## Pages
 
+Changement de page : un disque de fonte roule, couvre l'écran puis repart (sauf en mode calme).
+
 | Page | Ouverture | Effets propres |
 |---|---|---|
-| Accueil | Intro « la barre se charge » (disques, compteur 00 → 18 pièces), onde de choc WebGL sur la photo | ruban réactif à la vitesse, manifeste mot à mot, collections épinglées (disques), maillot mesh, néon des réseaux |
-| Boutique | Compacte, disques-filtres qui roulent | catalogue filtrable en Flip, recherche, tri, fiche en volet avec son lien (`?produit=`), panier |
-| Ta séance | Chrono LED qui devient le titre | maillot en vue éclatée épinglée, guide des tailles en cm, kit au vestiaire |
-| Nutrition | Étiquette nutritionnelle tracée, valeurs « à compléter » | shaker qui se remplit, saveurs, mentions obligatoires |
-| Livraison & retours | Bordereau tamponné | frise des étapes, remboursements, FAQ |
-| Contact | Casier qui s'ouvre | formulaire en étapes (simulé) |
+| Accueil | Intro « la barre se charge » (disques, compteur 00 → 18 pièces), puis la barre tombe sur le titre (magnésie, onde de choc WebGL) | ruban réactif à la vitesse, manifeste mot à mot, section Porté en volets, collections épinglées (disques), maillot mesh, néon des réseaux |
+| Boutique | Compacte, disques-filtres qui roulent | catalogue filtrable en Flip, fiches vivantes (vue portée, inclinaison, ajout rapide), recherche, tri, fiche en volet avec son lien (`?produit=`), panier |
+| Ta séance | Chrono LED qui devient le titre | scanner du maillot épinglé (ligne laser, repères, loupe), guide des tailles en cm, kit au vestiaire |
+| Nutrition | Étiquette nutritionnelle tracée, valeurs « à compléter » | shaker vivant (couleur par produit, vagues, bulles), saveurs, mentions obligatoires |
+| Livraison & retours | Bordereau tamponné | carte du suivi de colis, frise des étapes, remboursements, FAQ |
+| Contact | Casier qui s'ouvre (poignée, porte, néon qui grésille) | formulaire en étapes (simulé), ticket de vestiaire à l'envoi |
 | 404 | Disque qui roule | — |
 
 ## À fournir par le client (à compléter)

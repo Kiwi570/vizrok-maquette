@@ -23,7 +23,7 @@ export default (c) => html`
       </ul>
     </div>
     <div class="casier" data-effet="casier-contact">
-      <div class="casier-porte" aria-hidden="true"><span class="casier-fentes"></span><span class="casier-poignee"></span></div>
+      <div class="casier-porte" aria-hidden="true"><span class="casier-fentes"></span><span class="casier-plaque">${c.t('contact.casierNum')}</span><span class="casier-poignee"></span></div>
       <form class="etapes-form" id="formulaire" data-formulaire data-etapes action="#" novalidate>
         <div class="etape" data-etape="1">
           <p class="etape-num">${c.t('contact.etape')} 1 ${c.t('contact.sur')} 3</p>
@@ -52,6 +52,7 @@ export default (c) => html`
           <p data-message-envoi data-texte="${c.s('contact.envoye')}" role="status" tabindex="-1" hidden></p>
         </div>
       </form>
+      <div class="ticket" data-ticket aria-hidden="true" hidden data-tete="${c.s('contact.ticket.tete')}" data-num="${c.s('contact.ticket.num')}" data-mention="${c.s('contact.ticket.mention')}" data-envoye="${c.s('contact.ticket.envoye')}"></div>
     </div>
   </div>
 </section>

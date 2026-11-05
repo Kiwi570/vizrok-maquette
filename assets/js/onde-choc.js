@@ -2,7 +2,7 @@
    déforme la photo depuis le point d'impact ; un clic ou un toucher sur le héros en relance un ; la vitesse
    du défilement fait onduler l'image. Le canvas n'est visible que pendant le mouvement : au repos, la vraie photo,
    nette. Calé sur l'image (object-fit: cover et object-position). Sans WebGL ou en mode calme : rien, la photo reste. */
-import { etat, boucle } from './socle/index.js?v=2';
+import { etat, boucle } from './socle/index.js?v=3';
 
 const VS = `attribute vec2 p; varying vec2 v; void main(){ v = p * .5 + .5; gl_Position = vec4(p, 0., 1.); }`;
 const FS = `precision mediump float;
@@ -69,7 +69,8 @@ export function initOndeChoc(figure) {
 
   const chocs = [];
   let vitesse = 0, dernierY = window.scrollY, pretTexture = false, w = 0, h = 0, cadre = [0, 0, 1, 1];
-  const dpr = () => Math.min(window.devicePixelRatio || 1, window.innerWidth < 761 ? 1 : 1.25);
+  /* Rendu à 60 % de la résolution : la photo n'est remplacée par le canvas que pendant l'onde, en mouvement ; le coût par image baisse de moitié. */
+  const dpr = () => Math.min(window.devicePixelRatio || 1, window.innerWidth < 761 ? 1 : 1.25) * 0.6;
   figure.appendChild(canvas);
 
   function mesurer() {

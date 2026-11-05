@@ -9,17 +9,14 @@ export const page = { cle: 'seance', fichier: 'seance', imagePartage: 'grok/sean
 /* Guide du fournisseur : valeurs en pouces affichées « cm » sur la boutique actuelle, converties ici. */
 const GUIDE = [['S', 27.56, 19.69], ['M', 28.35, 20.87], ['L', 29.13, null], ['XL', 29.92, 23.23], ['2XL', 30.71, 24.41]];
 const cm = (p) => Math.round(p * 2.54);
-/* Position éclatée des pièces et des repères (état final, lisible sans JavaScript et en mode calme) ; site.js anime de 0 à 1. */
-const ECARTS = { 1: [0, 60], 2: [0, -16], 3: [0, -86], 4: [0, 28], 5: [84, -60] };
-const ANCRES = { 1: [200, 300], 2: [70, 176], 3: [200, 126], 4: [108, 330], 5: [200, 140] };
-const repere = (i) => { const [ax, ay] = ANCRES[i], [x, y] = ECARTS[i], lx = i % 2 ? 372 : 28; return { lx, py: ay + y, dx: ax + x - lx }; };
+/* Repères du scanner sur la photo du maillot (pièce, x %, y %), dans l'ordre où la ligne laser les atteint. */
+const REPERES = [[5, 44, 15.6], [3, 61, 18.5], [2, 31, 27], [1, 58, 50], [4, 26, 69]];
 
 export default (c) => {
   const P = c.donnees.produits;
   const get = (id) => P.find((p) => p.id === id);
   const maillot = get('maillot');
   const accessoires = P.filter((p) => p.categorie === 'accessoires');
-  const pieces = [1, 2, 3, 4, 5];
   const groupes = [
     { cle: 'maillot', options: [get('maillot')], couleurs: true, requis: true },
     { cle: 'gourde', options: [get('gourde')], couleurs: true },
@@ -41,28 +38,25 @@ export default (c) => {
   ${c.media({ nom: 'grok/seance-ouverture', alt: c.s('seance.alt'), cadrage: '66% 55%', cadrageMobile: '55% 65%', priorite: true, classe: 's-tete-media', sizes: '(max-width: 760px) 100vw, 50vw', attrs: 'data-fx="zoom" data-fx-force="10"' })}
 </section>
 
-<section class="eclate" id="eclate">
+<section class="eclate scanner" id="eclate" data-effet="maillot-scanner">
   <div class="eclate-cadre conteneur">
     <div class="eclate-texte">
       <p class="surtitre">${c.t('seance.eclate.surtitre')}</p>
       <h2 data-anime="lignes">${c.t('seance.eclate.titre')}</h2>
       <ol class="eclate-liste">
-        ${pieces.map((i) => html`<li data-piece="${i}"><strong>${c.t('seance.eclate.p' + i)}</strong> <span>${c.t('seance.eclate.p' + i + 't')}</span></li>`)}
+        ${REPERES.map(([i]) => html`<li data-piece="${i}"><strong>${c.t('seance.eclate.p' + i)}</strong> <span>${c.t('seance.eclate.p' + i + 't')}</span></li>`)}
       </ol>
       <p class="eclate-couleurs">${c.t('seance.eclate.couleurs')} <span data-prix>${prix(maillot.prix)} ${c.t('commun.ht')}</span></p>
     </div>
-    <div class="eclate-scene" data-effet="maillot-eclate" data-visuel>
-      <svg class="eclate-svg" viewBox="0 0 400 420" role="img" aria-label="${c.s('seance.eclate.titre')}">
-        <defs>
-          <pattern id="mesh" width="8" height="7" patternUnits="userSpaceOnUse"><path d="M0 3.5 4 0l4 3.5L4 7z" fill="none" stroke="currentColor" stroke-width=".7" opacity=".55"/></pattern>
-        </defs>
-        <g class="ep" data-piece="1"><g transform="translate(0 60)"><path class="ep-forme" d="M120 120h160l14 250H106z"/><path d="M120 120h160l14 250H106z" fill="url(#mesh)"/></g></g>
-        <g class="ep" data-piece="2"><g transform="translate(0 -16)"><path class="ep-forme" d="M120 120 60 160l26 46 34-22z"/><path class="ep-forme" d="M280 120l60 40-26 46-34-22z"/></g></g>
-        <g class="ep" data-piece="3"><g transform="translate(0 -86)"><path class="ep-col" d="M168 118c8 22 56 22 64 0" fill="none" stroke-width="8" stroke-linecap="round"/></g></g>
-        <g class="ep" data-piece="4"><g transform="translate(0 28)"><path class="ep-couture" d="M118 128 108 368M282 128l10 240" fill="none" stroke-width="2.5" stroke-dasharray="6 6"/></g></g>
-        <g class="ep" data-piece="5"><g transform="translate(84 -60)"><rect class="ep-etiquette" x="188" y="132" width="24" height="16" rx="2"/></g></g>
-        ${pieces.map((i) => html`<g class="ep-repere" data-repere="${i}" transform="translate(${repere(i).lx} ${repere(i).py})"><line class="ep-trait" x1="0" y1="0" x2="${repere(i).dx}" y2="0"/><circle r="11" class="ep-pastille"/><text text-anchor="middle" dy="4">${i}</text></g>`)}
-      </svg>
+    <div class="scan-scene" data-visuel>
+      <div class="scan-photo" style="--photo:url(/assets/images/produits/maillot-1-1200.webp)">
+        ${visuelProduit(c, maillot, { classe: 'scan-base', sizes: '(max-width: 760px) 90vw, 40vw' })}
+        <div class="scan-eclaire" aria-hidden="true"></div>
+        <div class="scan-grille" aria-hidden="true"></div>
+        <div class="scan-ligne" aria-hidden="true"><span></span></div>
+        ${REPERES.map(([i, x, y], k) => html`<span class="scan-repere" data-repere="${i}" style="--x:${x}%;--y:${y}%" aria-hidden="true">${k + 1}</span>`)}
+      </div>
+      <div class="scan-loupe" aria-hidden="true" style="--photo:url(/assets/images/produits/maillot-1-1200.webp)"><span class="scan-loupe-vue"></span><span class="scan-loupe-titre">${c.t('seance.eclate.loupe')} · <b data-loupe-titre>${c.t('seance.eclate.p' + REPERES[3][0])}</b></span></div>
     </div>
   </div>
 </section>

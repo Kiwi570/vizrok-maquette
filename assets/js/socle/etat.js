@@ -10,6 +10,8 @@ export const etat = {
   pret: false,
   defilement: 'natif',
   bouclesActives: () => 0,
+  /* Animation du voile propre au site (facultative) : { couvrir(v, duree), lever(v, duree), nettoyer(v) }, chacune rend une promesse. */
+  voileAnim: null,
 };
 window.__socle = etat;
 

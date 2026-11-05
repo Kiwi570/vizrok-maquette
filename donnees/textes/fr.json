@@ -74,7 +74,9 @@
     "voir": "Voir la fiche",
     "aCompleter": "à compléter",
     "choisir": "Choisir",
-    "ficheACompleter": "Fiche à compléter"
+    "ficheACompleter": "Fiche à compléter",
+    "ajoutRapide": "Ajout rapide · taille",
+    "ajouteCourt": "Ajouté"
   },
   "intro": {
     "mot1": "Plus fort.",
@@ -176,6 +178,13 @@
       "texte": "Vêtements, accessoires et nutrition : toute la boutique en un clic.",
       "action": "Entrer dans la boutique",
       "seance": "Composer ma séance"
+    },
+    "porte": {
+      "surtitre": "Porté",
+      "titre": "À la salle, puis dans la rue.",
+      "texte": "Les pièces Vizrok portées. Survole une photo, ou touche-la, pour voir la pièce et la choisir.",
+      "region": "Pièces portées",
+      "alt": "{piece} Vizrok porté"
     }
   },
   "boutique": {
@@ -218,7 +227,7 @@
     "chrono": "Chrono de salle · temps sur la page",
     "alt": "Coin d'entraînement vide avec banc et rack sous un projecteur",
     "eclate": {
-      "surtitre": "Le maillot, pièce par pièce",
+      "surtitre": "Le maillot au scanner",
       "titre": "Léger, respirant, coupé pour bouger.",
       "p1": "Mesh 100 % polyester",
       "p1t": "Respirant, tissu léger de 4,13 oz.",
@@ -230,7 +239,9 @@
       "p4t": "Construction cousue sur les côtés.",
       "p5": "Étiquette détachable",
       "p5t": "Rien ne gratte dans la nuque.",
-      "couleurs": "Blanc, jaune néon ou orange néon."
+      "couleurs": "Blanc, jaune néon ou orange néon.",
+      "loupe": "Gros plan",
+      "alt": "Maillot de sport Vizrok blanc, vu de face"
     },
     "tailles": {
       "surtitre": "Guide des tailles",
@@ -355,6 +366,13 @@
     "fin": {
       "titre": "Une autre question ?",
       "action": "Écrire à Vizrok"
+    },
+    "carte": {
+      "n1": "Ton écran",
+      "n2": "Modification",
+      "n3": "Atelier",
+      "n4": "Transporteur",
+      "n5": "Chez toi"
     }
   },
   "contact": {
@@ -387,7 +405,14 @@
     "envoye": "Message simulé : rien n'a été envoyé. Sur le site final, il partira vers Vizrok.store.",
     "defautAide": "Pour un défaut, joins sur le site final une photo nette sur une surface plane, avec l'étiquette visible.",
     "reseaux": "Ou sur les réseaux",
-    "ecrire": "Choisir le sujet"
+    "ecrire": "Choisir le sujet",
+    "ticket": {
+      "tete": "Vizrok · vestiaire",
+      "num": "Ticket n°",
+      "mention": "Message simulé · rien n’a été envoyé",
+      "envoye": "Envoyé ✓"
+    },
+    "casierNum": "18"
   },
   "introuvable": {
     "titre": "Cette page a quitté la barre.",

@@ -2,7 +2,7 @@
   "nom": "Vizrok.store",
   "adresse": "https://vizrok-maquette.vercel.app",
   "siteActuel": "vizrok-store-shop.fourthwall.com",
-  "version": 2,
+  "version": 3,
   "langues": ["fr"],
   "navigation": ["accueil", "boutique", "seance", "nutrition", "livraison", "contact"],
   "actionEntete": { "page": "boutique" },

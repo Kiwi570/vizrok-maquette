@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="2" data-page="boutique" data-curseur>
+<html lang="fr" data-v="3" data-page="boutique" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -41,15 +41,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/titres-900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/texte-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=2">
-<link rel="stylesheet" href="/assets/css/site.css?v=2">
-<link rel="modulepreload" href="/assets/js/site.js?v=2">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
+<link rel="stylesheet" href="/assets/css/socle.css?v=3">
+<link rel="stylesheet" href="/assets/css/site.css?v=3">
+<link rel="modulepreload" href="/assets/js/site.js?v=3">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=3">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
 <script src="/assets/vendor/Flip.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=2"></script>
+<script type="module" src="/assets/js/site.js?v=3"></script>
 <meta name="theme-color" content="#050B14">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -67,7 +67,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"OnlineStore","name":"Vizrok.store","url":"https://vizrok-maquette.vercel.app/","description":"Boutique officielle Vizrok : vêtements, accessoires et gamme Vizrok Nutrition, fabriqués à la demande.","slogan":"Built to Perform.","sameAs":["https://instagram.com/Vizrok6","https://tiktok.com/@vizrok.off"],"paymentAccepted":"Carte bancaire, PayPal, Google Pay, Apple Pay"}</script>
 </head>
 <body id="haut">
-<div data-voile aria-hidden="true"><div class="voile-contenu"><span class="marque" aria-hidden="true"><svg class="marque-eclair" viewBox="0 0 24 32" width="18" height="24"><path d="M14 1 2 18h8l-2 13L22 12h-8l2-11z" fill="currentColor"/></svg></span><span data-voile-libelle>Boutique</span><span class="voile-barre"></span></div></div>
+<div data-voile aria-hidden="true"><div class="voile-disque"><svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="vd-cercle" d="M100 100m-66 0a66 66 0 1 1 132 0a66 66 0 1 1-132 0"/></defs><circle class="vd-fond" cx="100" cy="100" r="100"/><g class="vd-marques"><circle cx="100" cy="100" r="96" class="vd-bord"/><circle cx="100" cy="100" r="80" class="vd-rainure"/><text class="vd-texte"><textPath href="#vd-cercle" textLength="404" lengthAdjust="spacing">VIZROK · BUILT TO PERFORM · 20 KG ·</textPath></text><circle cx="100" cy="100" r="30" class="vd-moyeu"/><circle cx="100" cy="100" r="11" class="vd-trou"/></g></svg></div><div class="voile-contenu"><span class="marque" aria-hidden="true"><svg class="marque-eclair" viewBox="0 0 24 32" width="18" height="24"><path d="M14 1 2 18h8l-2 13L22 12h-8l2-11z" fill="currentColor"/></svg></span><span data-voile-libelle>Boutique</span><span class="voile-barre"></span></div></div>
 <div class="ouverture-panneau" data-ouverture aria-hidden="true" data-effet="barre-chargee">
   <p class="intro-logo"><span class="marque" aria-hidden="true"><svg class="marque-eclair" viewBox="0 0 24 32" width="18" height="24"><path d="M14 1 2 18h8l-2 13L22 12h-8l2-11z" fill="currentColor"/></svg></span><span class="intro-neon">VIZROK</span></p>
   <div class="intro-scene">
@@ -132,7 +132,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
   <div class="b-grille" data-grille data-anime="cascade">
     <article class="fiche " data-produit="maillot" data-categorie="vetements" data-prix-valeur="22.73" data-nom="Vizrok.store Maillot de sport Maillot de sport Maillot de sport unisexe léger en mesh polyester respirant, imprimé au visuel Vizrok.">
-  <a class="fiche-lien" href="/boutique?produit=maillot" data-produit-ouvrir="maillot" data-libelle="Boutique">
+  <a class="fiche-lien" href="/boutique?produit=maillot" data-produit-ouvrir="maillot" data-libelle="Boutique" data-vue-alt="/assets/images/produits/maillot-2" data-vue-alt-fond="#E4E4E4">
     <figure class="media media--produit fiche-media" style="--cadrage:50% 50%;--plaque:#000000">
   <picture>
     <img src="/assets/images/produits/maillot-1-1200.webp" srcset="/assets/images/produits/maillot-1-480.webp 480w, /assets/images/produits/maillot-1-800.webp 800w, /assets/images/produits/maillot-1-1200.webp 1200w" sizes="(max-width: 560px) 50vw, (max-width: 1000px) 33vw, 25vw" alt="Vizrok.store Maillot de sport" width="1200" height="1600" loading="lazy" decoding="async">
@@ -141,9 +141,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <h2 class="fiche-nom">Maillot de sport</h2>
   </a>
   <p class="fiche-ligne"><span class="fiche-prix" data-prix>22,73 € <small>HT</small></span><span class="fiche-couleurs" role="img" aria-label="Blanc, Jaune néon, Orange néon"><i style="--c:#F2F4F2"></i><i style="--c:#E6FF3B"></i><i style="--c:#FF7A1F"></i></span></p>
+  <div class="fiche-rapide" aria-hidden="true"><p class="fr-titre">Ajout rapide · taille</p><div class="fr-tailles"><button type="button" tabindex="-1" data-rapide="maillot" data-taille="S">S</button><button type="button" tabindex="-1" data-rapide="maillot" data-taille="M">M</button><button type="button" tabindex="-1" data-rapide="maillot" data-taille="L">L</button><button type="button" tabindex="-1" data-rapide="maillot" data-taille="XL">XL</button><button type="button" tabindex="-1" data-rapide="maillot" data-taille="2XL">2XL</button></div></div>
   <button type="button" class="bouton bouton--petit fiche-ajouter" data-ajouter="maillot" aria-label="Choisir : Maillot de sport">Choisir</button>
 </article><article class="fiche " data-produit="tshirt" data-categorie="vetements" data-prix-valeur="23.64" data-nom="T-shirt Vizrok Comfort Colors T-shirt Comfort Colors T-shirt en coton épais, coupe ample, logo néon Vizrok au centre de la poitrine.">
-  <a class="fiche-lien" href="/boutique?produit=tshirt" data-produit-ouvrir="tshirt" data-libelle="Boutique">
+  <a class="fiche-lien" href="/boutique?produit=tshirt" data-produit-ouvrir="tshirt" data-libelle="Boutique" data-vue-alt="/assets/images/produits/tshirt-3" data-vue-alt-fond="#E6E6E7">
     <figure class="media media--produit fiche-media" style="--cadrage:50% 50%;--plaque:#000000">
   <picture>
     <img src="/assets/images/produits/tshirt-1-1200.webp" srcset="/assets/images/produits/tshirt-1-480.webp 480w, /assets/images/produits/tshirt-1-800.webp 800w, /assets/images/produits/tshirt-1-1200.webp 1200w" sizes="(max-width: 560px) 50vw, (max-width: 1000px) 33vw, 25vw" alt="T-shirt Vizrok Comfort Colors" width="1200" height="1600" loading="lazy" decoding="async">
@@ -152,6 +153,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <h2 class="fiche-nom">T-shirt Comfort Colors</h2>
   </a>
   <p class="fiche-ligne"><span class="fiche-prix" data-prix>23,64 € <small>HT</small></span><span class="fiche-couleurs" role="img" aria-label="Blanc, Noir, Pepper"><i style="--c:#F2F2EE"></i><i style="--c:#16171A"></i><i style="--c:#4A4A48"></i></span></p>
+  <div class="fiche-rapide" aria-hidden="true"><p class="fr-titre">Ajout rapide · taille</p><div class="fr-tailles"><button type="button" tabindex="-1" data-rapide="tshirt" data-taille="S">S</button><button type="button" tabindex="-1" data-rapide="tshirt" data-taille="M">M</button><button type="button" tabindex="-1" data-rapide="tshirt" data-taille="L">L</button><button type="button" tabindex="-1" data-rapide="tshirt" data-taille="XL">XL</button><button type="button" tabindex="-1" data-rapide="tshirt" data-taille="2XL">2XL</button><button type="button" tabindex="-1" data-rapide="tshirt" data-taille="3XL">3XL</button><button type="button" tabindex="-1" data-rapide="tshirt" data-taille="4XL">4XL</button></div></div>
   <button type="button" class="bouton bouton--petit fiche-ajouter" data-ajouter="tshirt" aria-label="Choisir : T-shirt Comfort Colors">Choisir</button>
 </article><article class="fiche " data-produit="pantalon" data-categorie="vetements" data-prix-valeur="40.91" data-nom="Pantalon Vizrok Comfort Colors Pantalon Comfort Colors Pantalon de jogging en coton, coupe ample, logo néon Vizrok sur la jambe gauche.">
   <a class="fiche-lien" href="/boutique?produit=pantalon" data-produit-ouvrir="pantalon" data-libelle="Boutique">
@@ -163,9 +165,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <h2 class="fiche-nom">Pantalon Comfort Colors</h2>
   </a>
   <p class="fiche-ligne"><span class="fiche-prix" data-prix>40,91 € <small>HT</small></span><span class="fiche-couleurs" role="img" aria-label="Ivoire, Peachy, Hydrangea"><i style="--c:#EDE6D6"></i><i style="--c:#E9B79A"></i><i style="--c:#7D93B8"></i></span></p>
+  <div class="fiche-rapide" aria-hidden="true"><p class="fr-titre">Ajout rapide · taille</p><div class="fr-tailles"><button type="button" tabindex="-1" data-rapide="pantalon" data-taille="S">S</button><button type="button" tabindex="-1" data-rapide="pantalon" data-taille="M">M</button><button type="button" tabindex="-1" data-rapide="pantalon" data-taille="L">L</button><button type="button" tabindex="-1" data-rapide="pantalon" data-taille="XL">XL</button><button type="button" tabindex="-1" data-rapide="pantalon" data-taille="2XL">2XL</button></div></div>
   <button type="button" class="bouton bouton--petit fiche-ajouter" data-ajouter="pantalon" aria-label="Choisir : Pantalon Comfort Colors">Choisir</button>
 </article><article class="fiche " data-produit="hoodie-lane-seven" data-categorie="vetements" data-prix-valeur="31.82" data-nom="Vizrok Lane Seven Hoodie Hoodie Lane Seven Sweat à capuche unisexe, logo Vizrok imprimé au centre de la poitrine. Taille petit : prendre une taille au-dessus.">
-  <a class="fiche-lien" href="/boutique?produit=hoodie-lane-seven" data-produit-ouvrir="hoodie-lane-seven" data-libelle="Boutique">
+  <a class="fiche-lien" href="/boutique?produit=hoodie-lane-seven" data-produit-ouvrir="hoodie-lane-seven" data-libelle="Boutique" data-vue-alt="/assets/images/produits/hoodie-lane-seven-3" data-vue-alt-fond="#E3E3E3">
     <figure class="media media--produit fiche-media" style="--cadrage:50% 50%;--plaque:#000000">
   <picture>
     <img src="/assets/images/produits/hoodie-lane-seven-1-1200.webp" srcset="/assets/images/produits/hoodie-lane-seven-1-480.webp 480w, /assets/images/produits/hoodie-lane-seven-1-800.webp 800w, /assets/images/produits/hoodie-lane-seven-1-1200.webp 1200w" sizes="(max-width: 560px) 50vw, (max-width: 1000px) 33vw, 25vw" alt="Vizrok Lane Seven Hoodie" width="1200" height="1600" loading="lazy" decoding="async">
@@ -174,9 +177,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <h2 class="fiche-nom">Hoodie Lane Seven</h2>
   </a>
   <p class="fiche-ligne"><span class="fiche-prix" data-prix>31,82 € <small>HT</small></span><span class="fiche-couleurs" role="img" aria-label="Blanc, Noir, Anthracite chiné, Rose pâle"><i style="--c:#F2F2EE"></i><i style="--c:#16171A"></i><i style="--c:#45474C"></i><i style="--c:#F1CFD3"></i></span></p>
+  <div class="fiche-rapide" aria-hidden="true"><p class="fr-titre">Ajout rapide · taille</p><div class="fr-tailles"><button type="button" tabindex="-1" data-rapide="hoodie-lane-seven" data-taille="S">S</button><button type="button" tabindex="-1" data-rapide="hoodie-lane-seven" data-taille="M">M</button><button type="button" tabindex="-1" data-rapide="hoodie-lane-seven" data-taille="L">L</button><button type="button" tabindex="-1" data-rapide="hoodie-lane-seven" data-taille="XL">XL</button><button type="button" tabindex="-1" data-rapide="hoodie-lane-seven" data-taille="2XL">2XL</button><button type="button" tabindex="-1" data-rapide="hoodie-lane-seven" data-taille="3XL">3XL</button></div></div>
   <button type="button" class="bouton bouton--petit fiche-ajouter" data-ajouter="hoodie-lane-seven" aria-label="Choisir : Hoodie Lane Seven">Choisir</button>
 </article><article class="fiche " data-produit="hoodie-cotton-heritage" data-categorie="vetements" data-prix-valeur="37.28" data-nom="Vizrok Cotton Heritage Hoodie Hoodie Cotton Heritage Sweat à capuche unisexe épais, logo imprimé au centre de la poitrine. Taille petit : prendre une taille au-dessus.">
-  <a class="fiche-lien" href="/boutique?produit=hoodie-cotton-heritage" data-produit-ouvrir="hoodie-cotton-heritage" data-libelle="Boutique">
+  <a class="fiche-lien" href="/boutique?produit=hoodie-cotton-heritage" data-produit-ouvrir="hoodie-cotton-heritage" data-libelle="Boutique" data-vue-alt="/assets/images/produits/hoodie-cotton-heritage-3" data-vue-alt-fond="#E5E5E5">
     <figure class="media media--produit fiche-media" style="--cadrage:50% 50%;--plaque:#000000">
   <picture>
     <img src="/assets/images/produits/hoodie-cotton-heritage-1-1200.webp" srcset="/assets/images/produits/hoodie-cotton-heritage-1-480.webp 480w, /assets/images/produits/hoodie-cotton-heritage-1-800.webp 800w, /assets/images/produits/hoodie-cotton-heritage-1-1200.webp 1200w" sizes="(max-width: 560px) 50vw, (max-width: 1000px) 33vw, 25vw" alt="Vizrok Cotton Heritage Hoodie" width="1200" height="1600" loading="lazy" decoding="async">
@@ -185,9 +189,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <h2 class="fiche-nom">Hoodie Cotton Heritage</h2>
   </a>
   <p class="fiche-ligne"><span class="fiche-prix" data-prix>37,28 € <small>HT</small></span><span class="fiche-couleurs" role="img" aria-label="Blanc, Noir, Anthracite chiné, Lavande"><i style="--c:#F2F2EE"></i><i style="--c:#16171A"></i><i style="--c:#45474C"></i><i style="--c:#B9A8D6"></i></span></p>
+  <div class="fiche-rapide" aria-hidden="true"><p class="fr-titre">Ajout rapide · taille</p><div class="fr-tailles"><button type="button" tabindex="-1" data-rapide="hoodie-cotton-heritage" data-taille="S">S</button><button type="button" tabindex="-1" data-rapide="hoodie-cotton-heritage" data-taille="M">M</button><button type="button" tabindex="-1" data-rapide="hoodie-cotton-heritage" data-taille="L">L</button><button type="button" tabindex="-1" data-rapide="hoodie-cotton-heritage" data-taille="XL">XL</button><button type="button" tabindex="-1" data-rapide="hoodie-cotton-heritage" data-taille="2XL">2XL</button><button type="button" tabindex="-1" data-rapide="hoodie-cotton-heritage" data-taille="3XL">3XL</button></div></div>
   <button type="button" class="bouton bouton--petit fiche-ajouter" data-ajouter="hoodie-cotton-heritage" aria-label="Choisir : Hoodie Cotton Heritage">Choisir</button>
 </article><article class="fiche " data-produit="pull-cotton-heritage" data-categorie="vetements" data-prix-valeur="32.73" data-nom="Pull Vizrok Cotton Heritage Pull Cotton Heritage Sweat unisexe épais en coton mélangé, logo néon Vizrok au centre.">
-  <a class="fiche-lien" href="/boutique?produit=pull-cotton-heritage" data-produit-ouvrir="pull-cotton-heritage" data-libelle="Boutique">
+  <a class="fiche-lien" href="/boutique?produit=pull-cotton-heritage" data-produit-ouvrir="pull-cotton-heritage" data-libelle="Boutique" data-vue-alt="/assets/images/produits/pull-cotton-heritage-3" data-vue-alt-fond="#E4E4E4">
     <figure class="media media--produit fiche-media" style="--cadrage:50% 50%;--plaque:#000000">
   <picture>
     <img src="/assets/images/produits/pull-cotton-heritage-1-1200.webp" srcset="/assets/images/produits/pull-cotton-heritage-1-480.webp 480w, /assets/images/produits/pull-cotton-heritage-1-800.webp 800w, /assets/images/produits/pull-cotton-heritage-1-1200.webp 1200w" sizes="(max-width: 560px) 50vw, (max-width: 1000px) 33vw, 25vw" alt="Pull Vizrok Cotton Heritage" width="1200" height="1600" loading="lazy" decoding="async">
@@ -196,9 +201,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <h2 class="fiche-nom">Pull Cotton Heritage</h2>
   </a>
   <p class="fiche-ligne"><span class="fiche-prix" data-prix>32,73 € <small>HT</small></span><span class="fiche-couleurs" role="img" aria-label="Blanc, Noir, Anthracite chiné"><i style="--c:#F2F2EE"></i><i style="--c:#16171A"></i><i style="--c:#45474C"></i></span></p>
+  <div class="fiche-rapide" aria-hidden="true"><p class="fr-titre">Ajout rapide · taille</p><div class="fr-tailles"><button type="button" tabindex="-1" data-rapide="pull-cotton-heritage" data-taille="S">S</button><button type="button" tabindex="-1" data-rapide="pull-cotton-heritage" data-taille="M">M</button><button type="button" tabindex="-1" data-rapide="pull-cotton-heritage" data-taille="L">L</button><button type="button" tabindex="-1" data-rapide="pull-cotton-heritage" data-taille="XL">XL</button><button type="button" tabindex="-1" data-rapide="pull-cotton-heritage" data-taille="2XL">2XL</button><button type="button" tabindex="-1" data-rapide="pull-cotton-heritage" data-taille="3XL">3XL</button></div></div>
   <button type="button" class="bouton bouton--petit fiche-ajouter" data-ajouter="pull-cotton-heritage" aria-label="Choisir : Pull Cotton Heritage">Choisir</button>
 </article><article class="fiche " data-produit="pull-stanley-stella" data-categorie="vetements" data-prix-valeur="55.46" data-nom="Pull Vizrok Stanley/Stella Oversize Pull Stanley/Stella Oversize Sweat unisexe oversize en coton biologique, logo néon Vizrok au centre.">
-  <a class="fiche-lien" href="/boutique?produit=pull-stanley-stella" data-produit-ouvrir="pull-stanley-stella" data-libelle="Boutique">
+  <a class="fiche-lien" href="/boutique?produit=pull-stanley-stella" data-produit-ouvrir="pull-stanley-stella" data-libelle="Boutique" data-vue-alt="/assets/images/produits/pull-stanley-stella-3" data-vue-alt-fond="#E5E5E5">
     <figure class="media media--produit fiche-media" style="--cadrage:50% 50%;--plaque:#000000">
   <picture>
     <img src="/assets/images/produits/pull-stanley-stella-1-1200.webp" srcset="/assets/images/produits/pull-stanley-stella-1-480.webp 480w, /assets/images/produits/pull-stanley-stella-1-800.webp 800w, /assets/images/produits/pull-stanley-stella-1-1200.webp 1200w" sizes="(max-width: 560px) 50vw, (max-width: 1000px) 33vw, 25vw" alt="Pull Vizrok Stanley/Stella Oversize" width="1200" height="1600" loading="lazy" decoding="async">
@@ -207,9 +213,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <h2 class="fiche-nom">Pull Stanley/Stella Oversize</h2>
   </a>
   <p class="fiche-ligne"><span class="fiche-prix" data-prix>55,46 € <small>HT</small></span><span class="fiche-couleurs" role="img" aria-label="Blanc, Gris chiné, Noir"><i style="--c:#F2F2EE"></i><i style="--c:#A5A7AB"></i><i style="--c:#16171A"></i></span></p>
+  <div class="fiche-rapide" aria-hidden="true"><p class="fr-titre">Ajout rapide · taille</p><div class="fr-tailles"><button type="button" tabindex="-1" data-rapide="pull-stanley-stella" data-taille="S">S</button><button type="button" tabindex="-1" data-rapide="pull-stanley-stella" data-taille="M">M</button><button type="button" tabindex="-1" data-rapide="pull-stanley-stella" data-taille="L">L</button><button type="button" tabindex="-1" data-rapide="pull-stanley-stella" data-taille="XL">XL</button><button type="button" tabindex="-1" data-rapide="pull-stanley-stella" data-taille="2XL">2XL</button></div></div>
   <button type="button" class="bouton bouton--petit fiche-ajouter" data-ajouter="pull-stanley-stella" aria-label="Choisir : Pull Stanley/Stella Oversize">Choisir</button>
 </article><article class="fiche " data-produit="bob" data-categorie="accessoires" data-prix-valeur="25.46" data-nom="Vizrok Big Accessories Bucket Hat Bob Big Accessories Bob de la ligne Vizrok Big Accessories, emblème éclair sur le devant.">
-  <a class="fiche-lien" href="/boutique?produit=bob" data-produit-ouvrir="bob" data-libelle="Boutique">
+  <a class="fiche-lien" href="/boutique?produit=bob" data-produit-ouvrir="bob" data-libelle="Boutique" data-vue-alt="/assets/images/produits/bob-3" data-vue-alt-fond="#8E8182" data-vue-alt-plein>
     <figure class="media media--produit fiche-media" style="--cadrage:50% 50%;--plaque:#000000">
   <picture>
     <img src="/assets/images/produits/bob-1-1200.webp" srcset="/assets/images/produits/bob-1-480.webp 480w, /assets/images/produits/bob-1-800.webp 800w, /assets/images/produits/bob-1-1200.webp 1200w" sizes="(max-width: 560px) 50vw, (max-width: 1000px) 33vw, 25vw" alt="Vizrok Big Accessories Bucket Hat" width="1200" height="1600" loading="lazy" decoding="async">
@@ -220,7 +227,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <p class="fiche-ligne"><span class="fiche-prix" data-prix>25,46 € <small>HT</small></span></p>
   <button type="button" class="bouton bouton--petit fiche-ajouter" data-ajouter="bob" aria-label="Ajouter : Bob Big Accessories">Ajouter</button>
 </article><article class="fiche " data-produit="casquette" data-categorie="accessoires" data-prix-valeur="22.73" data-nom="Vizrok Casquette Otto Cap Low Profile Casquette Otto Low Profile Casquette basse non structurée, emblème éclair sur le devant.">
-  <a class="fiche-lien" href="/boutique?produit=casquette" data-produit-ouvrir="casquette" data-libelle="Boutique">
+  <a class="fiche-lien" href="/boutique?produit=casquette" data-produit-ouvrir="casquette" data-libelle="Boutique" data-vue-alt="/assets/images/produits/casquette-4" data-vue-alt-fond="#EDCFC6" data-vue-alt-plein>
     <figure class="media media--produit fiche-media" style="--cadrage:50% 50%;--plaque:#000000">
   <picture>
     <img src="/assets/images/produits/casquette-1-1200.webp" srcset="/assets/images/produits/casquette-1-480.webp 480w, /assets/images/produits/casquette-1-800.webp 800w, /assets/images/produits/casquette-1-1200.webp 1200w" sizes="(max-width: 560px) 50vw, (max-width: 1000px) 33vw, 25vw" alt="Vizrok Casquette Otto Cap Low Profile" width="1200" height="1600" loading="lazy" decoding="async">
@@ -231,7 +238,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <p class="fiche-ligne"><span class="fiche-prix" data-prix>22,73 € <small>HT</small></span><span class="fiche-couleurs" role="img" aria-label="Blanc, Kaki, Rouge"><i style="--c:#F2F2EE"></i><i style="--c:#9C8F6A"></i><i style="--c:#C8252B"></i></span></p>
   <button type="button" class="bouton bouton--petit fiche-ajouter" data-ajouter="casquette" aria-label="Ajouter : Casquette Otto Low Profile">Ajouter</button>
 </article><article class="fiche " data-produit="gourde" data-categorie="accessoires" data-prix-valeur="28.18" data-nom="Vizrok Stainless Steel Water Bottle Gourde inox Gourde isotherme en acier inoxydable aux couleurs de Vizrok.">
-  <a class="fiche-lien" href="/boutique?produit=gourde" data-produit-ouvrir="gourde" data-libelle="Boutique">
+  <a class="fiche-lien" href="/boutique?produit=gourde" data-produit-ouvrir="gourde" data-libelle="Boutique" data-vue-alt="/assets/images/produits/gourde-3" data-vue-alt-fond="#706E6E" data-vue-alt-plein>
     <figure class="media media--produit fiche-media" style="--cadrage:50% 50%;--plaque:#000000">
   <picture>
     <img src="/assets/images/produits/gourde-1-1200.webp" srcset="/assets/images/produits/gourde-1-480.webp 480w, /assets/images/produits/gourde-1-800.webp 800w, /assets/images/produits/gourde-1-1200.webp 1200w" sizes="(max-width: 560px) 50vw, (max-width: 1000px) 33vw, 25vw" alt="Vizrok Stainless Steel Water Bottle" width="1200" height="1600" loading="lazy" decoding="async">
@@ -242,8 +249,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <p class="fiche-ligne"><span class="fiche-prix" data-prix>28,18 € <small>HT</small></span><span class="fiche-couleurs" role="img" aria-label="Noir, Blanc"><i style="--c:#16171A"></i><i style="--c:#F2F2EE"></i></span></p>
   <button type="button" class="bouton bouton--petit fiche-ajouter" data-ajouter="gourde" aria-label="Ajouter : Gourde inox">Ajouter</button>
 </article><article class="fiche " data-produit="verre-shaker" data-categorie="accessoires" data-prix-valeur="22.73" data-nom="Vizrok Shaker Pint Glass Verre shaker Verre de 473 ml au logo Vizrok.">
-  <a class="fiche-lien" href="/boutique?produit=verre-shaker" data-produit-ouvrir="verre-shaker" data-libelle="Boutique">
-    <figure class="media media--produit fiche-media" style="--cadrage:50% 50%;--plaque:#F9F9F9">
+  <a class="fiche-lien" href="/boutique?produit=verre-shaker" data-produit-ouvrir="verre-shaker" data-libelle="Boutique" data-vue-alt="/assets/images/produits/verre-shaker-2" data-vue-alt-fond="#F6F6F6">
+    <figure class="media media--produit media--clair fiche-media" style="--cadrage:50% 50%;--plaque:#F9F9F9">
   <picture>
     <img src="/assets/images/produits/verre-shaker-1-1200.webp" srcset="/assets/images/produits/verre-shaker-1-480.webp 480w, /assets/images/produits/verre-shaker-1-800.webp 800w, /assets/images/produits/verre-shaker-1-1200.webp 1200w" sizes="(max-width: 560px) 50vw, (max-width: 1000px) 33vw, 25vw" alt="Vizrok Shaker Pint Glass" width="1200" height="1600" loading="lazy" decoding="async">
   </picture>
@@ -253,7 +260,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <p class="fiche-ligne"><span class="fiche-prix" data-prix>22,73 € <small>HT</small></span></p>
   <button type="button" class="bouton bouton--petit fiche-ajouter" data-ajouter="verre-shaker" aria-label="Ajouter : Verre shaker">Ajouter</button>
 </article><article class="fiche " data-produit="verre-canette" data-categorie="accessoires" data-prix-valeur="20" data-nom="Vizrok.store Verre en forme de canette Verre canette Verre transparent en forme de canette, imprimé au visuel Vizrok.">
-  <a class="fiche-lien" href="/boutique?produit=verre-canette" data-produit-ouvrir="verre-canette" data-libelle="Boutique">
+  <a class="fiche-lien" href="/boutique?produit=verre-canette" data-produit-ouvrir="verre-canette" data-libelle="Boutique" data-vue-alt="/assets/images/produits/verre-canette-2" data-vue-alt-fond="#000000">
     <figure class="media media--produit fiche-media" style="--cadrage:50% 50%;--plaque:#000000">
   <picture>
     <img src="/assets/images/produits/verre-canette-1-1200.webp" srcset="/assets/images/produits/verre-canette-1-480.webp 480w, /assets/images/produits/verre-canette-1-800.webp 800w, /assets/images/produits/verre-canette-1-1200.webp 1200w" sizes="(max-width: 560px) 50vw, (max-width: 1000px) 33vw, 25vw" alt="Vizrok.store Verre en forme de canette" width="1200" height="1600" loading="lazy" decoding="async">
@@ -264,7 +271,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <p class="fiche-ligne"><span class="fiche-prix" data-prix>20,00 € <small>HT</small></span></p>
   <button type="button" class="bouton bouton--petit fiche-ajouter" data-ajouter="verre-canette" aria-label="Ajouter : Verre canette">Ajouter</button>
 </article><article class="fiche " data-produit="poster" data-categorie="deco" data-prix-valeur="15" data-nom="Poster Vizrok paysage Poster paysage Poster Vizrok au format paysage, finition mate.">
-  <a class="fiche-lien" href="/boutique?produit=poster" data-produit-ouvrir="poster" data-libelle="Boutique">
+  <a class="fiche-lien" href="/boutique?produit=poster" data-produit-ouvrir="poster" data-libelle="Boutique" data-vue-alt="/assets/images/produits/poster-3" data-vue-alt-fond="#EEECEC" data-vue-alt-plein>
     <figure class="media media--produit fiche-media" style="--cadrage:50% 50%;--plaque:#000000">
   <picture>
     <img src="/assets/images/produits/poster-1-1200.webp" srcset="/assets/images/produits/poster-1-480.webp 480w, /assets/images/produits/poster-1-800.webp 800w, /assets/images/produits/poster-1-1200.webp 1200w" sizes="(max-width: 560px) 50vw, (max-width: 1000px) 33vw, 25vw" alt="Poster Vizrok paysage" width="1200" height="1600" loading="lazy" decoding="async">
@@ -300,7 +307,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <button type="button" class="bouton bouton--petit fiche-ajouter" data-ajouter="energy" aria-label="Ajouter : Vizrok Energy">Ajouter</button>
 </article><article class="fiche " data-produit="barre" data-categorie="nutrition" data-prix-valeur="15.91" data-nom="Vizrok nutrition-Barre chocolat protéinées Barre protéinée Barre de 55 g à 25 % de protéines, sans huile de palme, en six saveurs.">
   <a class="fiche-lien" href="/boutique?produit=barre" data-produit-ouvrir="barre" data-libelle="Boutique">
-    <figure class="media media--produit media--plein fiche-media" style="--cadrage:50% 50%;--plaque:#F6D7A9">
+    <figure class="media media--produit media--plein media--clair fiche-media" style="--cadrage:50% 50%;--plaque:#F6D7A9">
   <picture>
     <img src="/assets/images/produits/barre-1-1200.webp" srcset="/assets/images/produits/barre-1-480.webp 480w, /assets/images/produits/barre-1-800.webp 800w, /assets/images/produits/barre-1-1200.webp 1200w" sizes="(max-width: 560px) 50vw, (max-width: 1000px) 33vw, 25vw" alt="Vizrok nutrition-Barre chocolat protéinées" width="1200" height="800" loading="lazy" decoding="async">
   </picture>

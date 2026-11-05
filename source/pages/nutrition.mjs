@@ -6,6 +6,9 @@ import { prix, visuelProduit } from '../gabarits/vizrok.mjs';
 
 export const page = { cle: 'nutrition', fichier: 'nutrition', imagePartage: 'grok/nutrition-bandeau-1280.webp' };
 
+/* Couleur du liquide du shaker pour chaque produit de la gamme. */
+const TEINTES = { nutrimax: '#3DFF8A', energy: '#E6FF3B', barre: '#D99A4E', 'built-to-perform': '#FF7A1F', whey: '#C08A5C' };
+
 export default (c) => {
   const P = c.donnees.produits.filter((p) => p.categorie === 'nutrition');
   const barre = P.find((p) => p.id === 'barre');
@@ -33,9 +36,14 @@ export default (c) => {
   <div class="conteneur gamme-cadre">
     <div class="gamme-shaker" data-effet="shaker-niveau" data-visuel aria-hidden="true">
       <svg viewBox="0 0 160 300">
-        <defs><clipPath id="shaker-int"><path d="M34 70h92l-8 210a10 10 0 0 1-10 10H52a10 10 0 0 1-10-10z"/></clipPath></defs>
-        <rect class="sh-niveau" x="0" y="76" width="160" height="214" clip-path="url(#shaker-int)" data-shaker-niveau/>
+        <defs><linearGradient id="sh-degrade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="sh-stop-a"/><stop offset="1" class="sh-stop-b"/></linearGradient><clipPath id="shaker-int"><path d="M34 70h92l-8 210a10 10 0 0 1-10 10H52a10 10 0 0 1-10-10z"/></clipPath></defs>
+        <g clip-path="url(#shaker-int)">
+          <path class="sh-niveau" d="M0 76H160V300H0Z" data-shaker-niveau/>
+          <path class="sh-menisque" d="M0 76H160" data-shaker-menisque/>
+          <g class="sh-bulles" data-shaker-bulles>${[0, 1, 2, 3, 4, 5, 6, 7, 8].map((k) => html`<circle cx="${48 + ((k * 37) % 64)}" cy="${280 - ((k * 53) % 180)}" r="${1.6 + (k % 3)}"/>`)}</g>
+        </g>
         <path class="sh-verre" d="M34 70h92l-8 210a10 10 0 0 1-10 10H52a10 10 0 0 1-10-10z"/>
+        <path class="sh-reflet" d="M48 84l5 186"/>
         <path class="sh-couvercle" d="M28 46h104v24H28z M58 14h44v32H58z"/>
         ${P.map((p, i) => html`<line class="sh-grad" x1="112" x2="124" y1="${270 - i * 44}" y2="${270 - i * 44}"/>`)}
       </svg>
@@ -45,7 +53,7 @@ export default (c) => {
       <p class="surtitre">${c.t('nutrition.gamme.surtitre')}</p>
       <h2 data-anime="lignes">${c.t('nutrition.gamme.titre')}</h2>
       <p>${c.t('nutrition.gamme.texte')}</p>
-      ${P.map((p, i) => html`<article class="n-produit" data-n-produit="${i + 1}" id="n-${p.id}" data-anime>
+      ${P.map((p, i) => html`<article class="n-produit" data-n-produit="${i + 1}" data-couleur="${TEINTES[p.id] || '#3DFF8A'}" id="n-${p.id}" data-anime>
         ${visuelProduit(c, p, { classe: 'n-produit-media', sizes: '(max-width: 760px) 40vw, 18vw' })}
         <div>
           <h3>${p.court}</h3>
